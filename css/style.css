@@ -1,7 +1,11 @@
+/* TIPOGRAFIAS DE LA WEB */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
 /* ROOT PARA VARIABLES */
 
 :root {
   --font-family: "Open Sans", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
   --verde-oscuro: #099d8d;
   --verde-oscuro-alpha: #099d8eef;
   --verde-claro: #14d9c4;
@@ -16,7 +20,7 @@
 /* --------HEADER--------*/
 
 .header-container {
-  width: 320px;
+  width: 100vw;
   height: 421px;
   background-image: url(../images/hero_team_9.webp);
   background-size: cover;
@@ -25,17 +29,18 @@
 }
 
 .team-name {
-  width: 100%vw;
+  width: 100vw;
   height: 60px;
   background-color: var(--verde-oscuro-alpha);
-  font-family: var(--font-family);
+  font-family: var(--font-rubik);
+  font-size: 16px;
   color: var(--blanco);
   text-align: center;
   line-height: 60px;
 }
 
 .nav-header {
-  width: 100%vw;
+  width: 100vw;
   height: 45px;
   background-color: var(--verde-claro-alpha);
   line-height: 45px;
@@ -54,7 +59,8 @@
 }
 
 .main-menu a {
-  font-family: var(--font-family);
+  font-family: var(--font-rubik);
+  font-size: 15px;
   color: var(--blanco);
 }
 
@@ -64,12 +70,20 @@
 
 /* ------------------ FIN DEL HEADER -----------*/
 
-/* .hero {
-  width: 100%vw;
-  height: 421px;
+.hero-claim {
+  height: 80px;
+  max-height: 80px;
+  margin: -40px 15px 0 15px;
+  background-color: var(--blanco);
+  font-family: var(--font-family);
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
-.hero img {
+/* .hero img {
   max-width: 100%;
   display: block;
   object-fit: fill;
