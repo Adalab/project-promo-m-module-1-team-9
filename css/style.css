@@ -2,15 +2,47 @@
 
 :root {
   --font-family: "Open Sans", sans-serif;
-  --blue-color: #14d9c4;
+  --verde-oscuro: #099d8d;
+  --verde-claro: #14d9c4;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --gris-oscuro: #54585a;
+  --gris-claro: #b8b8b9;
+  --gris-fondo: #f1f1f1;
 }
 
 /* --------HEADER--------*/
 
-.teamname {
-  width: 100vw;
-  background-color: #139f90;
+.team-name {
+  width: 100%vw;
+  height: 60px;
+  background-color: var(--verde-oscuro);
+  font-family: var(--font-family);
+  color: var(--blanco);
+  text-align: center;
+  line-height: 60px;
 }
+
+.nav-header {
+  width: 100%vw;
+  height: 45px;
+  background-color: var(--verde-claro);
+  line-height: 45px;
+}
+
+.main-menu__item {
+  display: inline-block;
+}
+
+.main-menu a {
+  font-family: var(--font-family);
+  color: var(--blanco);
+}
+.main-menu a:hover {
+  color: var(--verde-oscuro);
+}
+
+/* ------------------ FIN DEL HEADER -----------*/
 
 /*EQUIPO*/
 .team h2 {
