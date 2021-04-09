@@ -1,3 +1,9 @@
+/* ROOT PARA VARIABLES */
+
+:root {
+  --font-family: "Open Sans", sans-serif;
+}
+
 /* --------HEADER--------*/
 
 .teamname {
@@ -17,13 +23,17 @@
 }
 
 .team {
+  font-family: var(--font-family);
   text-align: center;
+  padding: 30px 15px;
 }
 
 /*FORTALEZAS Y DEBILIDADES*/
 .team-info p {
   font-size: 16px;
   color: #54585a;
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 
 .team-info h3 {
@@ -32,6 +42,8 @@
 }
 
 .team-info {
-  background-color: #b8b8b9;
+  font-family: var(--font-family);
+  background-color: rgba(184, 184, 185, 0.2);
   text-align: center;
+  padding: 30px 15px 45px;
 }
