@@ -47,12 +47,12 @@
 /*EQUIPO*/
 .team h2 {
   font-size: 24px;
-  color: #14d9c4;
+  color: var(--verde-claro);
 }
 
 .team p {
   font-size: 16px;
-  color: #54585a;
+  color: var(--gris-oscuro);
 }
 
 .team {
@@ -67,14 +67,14 @@
 
 .team-info p {
   font-size: 16px;
-  color: #54585a;
+  color: var(--gris-oscuro);
   padding-bottom: 30px;
   padding-top: 15px;
 }
 
 .team-info h3 {
   font-size: 22px;
-  color: #14d9c4;
+  color: var(--verde-claro);
 }
 
 .team-info {
