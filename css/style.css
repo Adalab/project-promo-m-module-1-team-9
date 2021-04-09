@@ -1,5 +1,6 @@
 :root {
   --font-family: "Open Sans", sans-serif;
+  --blue-color: #14d9c4;
 }
 /*EQUIPO*/
 .team h2 {
@@ -13,6 +14,8 @@
 }
 
 .team {
+  margin: auto;
+  max-width: 601px;
   font-family: var(--font-family);
   text-align: center;
   padding: 30px 15px;
