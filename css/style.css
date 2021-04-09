@@ -1,3 +1,10 @@
+/* --------HEADER--------*/
+
+.teamname {
+  width: 100vw;
+  background-color: #139f90;
+}
+
 /*EQUIPO*/
 .team h2 {
   font-size: 24px;
