@@ -1,4 +1,30 @@
-:root {
-  --blue-color: #14d9c4;
-  --font-size-p: 16px;
+/*EQUIPO*/
+.team h2 {
+  font-size: 24px;
+  color: #14d9c4;
+}
+
+.team p {
+  font-size: 16px;
+  color: #54585a;
+}
+
+.team {
+  text-align: center;
+}
+
+/*FORTALEZAS Y DEBILIDADES*/
+.team-info p {
+  font-size: 16px;
+  color: #54585a;
+}
+
+.team-info h3 {
+  font-size: 22px;
+  color: #14d9c4;
+}
+
+.team-info {
+  background-color: #b8b8b9;
+  text-align: center;
 }
