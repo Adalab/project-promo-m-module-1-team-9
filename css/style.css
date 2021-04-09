@@ -1,7 +1,17 @@
+/* ROOT PARA VARIABLES */
+
 :root {
   --font-family: "Open Sans", sans-serif;
   --blue-color: #14d9c4;
 }
+
+/* --------HEADER--------*/
+
+.teamname {
+  width: 100vw;
+  background-color: #139f90;
+}
+
 /*EQUIPO*/
 .team h2 {
   font-size: 24px;
