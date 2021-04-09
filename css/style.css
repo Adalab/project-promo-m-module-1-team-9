@@ -3,7 +3,9 @@
 :root {
   --font-family: "Open Sans", sans-serif;
   --verde-oscuro: #099d8d;
+  --verde-oscuro-alpha: #099d8eef;
   --verde-claro: #14d9c4;
+  --verde-claro-alpha: #14d9c5e1;
   --blanco: #ffffff;
   --negro: #000000;
   --gris-oscuro: #54585a;
@@ -13,10 +15,19 @@
 
 /* --------HEADER--------*/
 
+.header-container {
+  width: 320px;
+  height: 421px;
+  background-image: url(../images/hero_team_9.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .team-name {
   width: 100%vw;
   height: 60px;
-  background-color: var(--verde-oscuro);
+  background-color: var(--verde-oscuro-alpha);
   font-family: var(--font-family);
   color: var(--blanco);
   text-align: center;
@@ -26,8 +37,16 @@
 .nav-header {
   width: 100%vw;
   height: 45px;
-  background-color: var(--verde-claro);
+  background-color: var(--verde-claro-alpha);
   line-height: 45px;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .main-menu__item {
@@ -38,11 +57,25 @@
   font-family: var(--font-family);
   color: var(--blanco);
 }
+
 .main-menu a:hover {
   color: var(--verde-oscuro);
 }
 
 /* ------------------ FIN DEL HEADER -----------*/
+
+/* .hero {
+  width: 100%vw;
+  height: 421px;
+}
+
+.hero img {
+  max-width: 100%;
+  display: block;
+  object-fit: fill;
+  margin-left: auto;
+  margin-right: auto;
+} */
 
 /*EQUIPO*/
 .team h2 {
@@ -118,4 +151,63 @@
   font-family: var(--font-family);
   color: var(--gris-oscuro);
   text-align: center;
+/* ABOUT */
+
+.about {
+  width: 320px;
+  height: 2225px;
+  margin: 1083px 0 0;
+  padding: 30px 15px 45px;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-h2 {
+  width: 193px;
+  height: 45px;
+  margin: 0 47.5px 30px 49.5px;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: center;
+  color: var(--verde-oscuro);
+}
+
+.about-article {
+  text-align: center;
+  width: 290px;
+}
+
+.about-img {
+  width: 180px;
+  height: 180px;
+  margin: 0 55px 15px;
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+}
+
+.about-name {
+  width: 147px;
+  height: 45px;
+  margin: 15px 70.5px 0 72.5px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 2.25;
+  text-align: center;
+  color: var(--negro);
+}
+
+.about-bio {
+  width: 290px;
+  height: 200px;
+  margin: 60px 0 15px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--gris-oscuro);
 }
