@@ -17,6 +17,10 @@
   --gris-fondo: #f1f1f1;
 }
 
+.container {
+  margin: 0 15px;
+}
+
 /* --------HEADER--------*/
 
 .header-container {
@@ -112,6 +116,14 @@
 
 /*FORTALEZAS Y DEBILIDADES*/
 
+.rectangle {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  transform: rotate(45deg);
+  margin: auto;
+}
+
 .team-info p {
   font-size: 16px;
   color: var(--gris-oscuro);
@@ -143,13 +155,6 @@
   padding-top: 30px;
   padding-bottom: 45px;
   text-align: center;
-
-}
-
-.box {
-  /* border: 1px solid black; */
-  margin: 5px;
-  
 }
 
 .copy {
@@ -158,12 +163,8 @@
   color: var(--gris-claro);
 }
 
-.img-footer {
-  display:block;
-  box-sizing: var(--verde-oscuro);
-  
-  
-  
+.container img {
+  height: 45px;
 }
 
 .menu a {
@@ -171,7 +172,7 @@
   font-family: var(--font-family);
   color: var(--gris-oscuro);
   text-align: center;
-
+}
 
 /* ABOUT */
 
@@ -183,7 +184,7 @@
   align-items: center;
   padding: 30px 0 0;
 }
-  
+
 .about-h2 {
   width: 193px;
   height: 45px;
