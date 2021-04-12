@@ -147,7 +147,7 @@
 
 .box {
   /* border: 1px solid black; */
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .copy {
@@ -157,9 +157,9 @@
 }
 
 .img-footer {
-  display: block;
+  height: 45px;
   box-sizing: var(--verde-oscuro);
-  border: solid;
+  object-fit: cover;
 }
 
 .menu a {
@@ -167,7 +167,7 @@
   font-family: var(--font-family);
   color: var(--gris-oscuro);
   text-align: center;
-
+}
 
 /* ABOUT */
 
