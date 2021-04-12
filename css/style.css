@@ -153,20 +153,14 @@
   text-align: center;
 }
 
-.box {
-  /* border: 1px solid black; */
-  margin: 5px;
-}
-
 .copy {
   font-size: 14px;
   font-family: var(--font-family);
   color: var(--gris-claro);
 }
 
-.img-footer {
-  display: block;
-  box-sizing: var(--verde-oscuro);
+.container img {
+  height: 45px;
 }
 
 .menu a {
