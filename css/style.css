@@ -112,6 +112,14 @@
 
 /*FORTALEZAS Y DEBILIDADES*/
 
+.rectangle {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  transform: rotate(45deg);
+  margin: auto;
+}
+
 .team-info p {
   font-size: 16px;
   color: var(--gris-oscuro);
@@ -149,7 +157,6 @@
 .box {
   /* border: 1px solid black; */
   margin: 5px;
-  
 }
 
 .copy {
@@ -161,9 +168,6 @@
 .img-footer {
   display:block;
   box-sizing: var(--verde-oscuro);
-  
-  
-  
 }
 
 .menu a {
@@ -178,7 +182,7 @@
 .about {
   width: 320px;
   height: 2225px;
-  margin: 1083px 0 0;
+  margin: 1083px 0;
   padding: 30px 15px 45px;
   background-color: var(--blanco);
   display: flex;
