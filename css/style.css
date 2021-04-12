@@ -17,6 +17,10 @@
   --gris-fondo: #f1f1f1;
 }
 
+.container {
+  margin: 0 15px;
+}
+
 /* --------HEADER--------*/
 
 .header-container {
