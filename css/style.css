@@ -151,7 +151,6 @@
   padding-top: 30px;
   padding-bottom: 45px;
   text-align: center;
-
 }
 
 .box {
@@ -166,7 +165,7 @@
 }
 
 .img-footer {
-  display:block;
+  display: block;
   box-sizing: var(--verde-oscuro);
 }
 
@@ -175,7 +174,7 @@
   font-family: var(--font-family);
   color: var(--gris-oscuro);
   text-align: center;
-
+}
 
 /* ABOUT */
 
