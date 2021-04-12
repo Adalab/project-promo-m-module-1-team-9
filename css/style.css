@@ -143,13 +143,11 @@
   padding-top: 30px;
   padding-bottom: 45px;
   text-align: center;
-
 }
 
 .box {
   /* border: 1px solid black; */
   margin: 5px;
-  
 }
 
 .copy {
@@ -159,11 +157,9 @@
 }
 
 .img-footer {
-  display:block;
+  display: block;
   box-sizing: var(--verde-oscuro);
-  
-  
-  
+  border: solid;
 }
 
 .menu a {
