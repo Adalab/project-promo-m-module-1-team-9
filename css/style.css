@@ -243,8 +243,9 @@
   font-size: 1rem;
 }
 
-.fa :hover {
+.fa:hover {
   color: var(--gris-oscuro);
+  transform: scale(1.5);
 }
 
 /* ===================TABLET VERSION===================*/
