@@ -29,6 +29,9 @@
   background-color: var(--verde-oscuro-alpha);
   color: var(--blanco);
   font-family: var(--font-rubik);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .main-header .container {
@@ -76,6 +79,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--font-family);
+  z-index: 0;
 }
 
 .hero .container {
@@ -88,8 +92,7 @@
   margin: 0;
   padding: 10px;
   background-color: var(--blanco);
-  transform: translateY(50%);
-  flex-grow: 0; /* Problema con esta línea */
+  transform: translateY(200px);
 }
 
 /*EQUIPO*/
@@ -97,6 +100,7 @@
   font-size: 24px;
   color: var(--verde-claro);
   text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
 .team p {
@@ -244,4 +248,17 @@
 .fab,
 .fas {
   padding: 5px;
+}
+
+/*TABLET VERSION*/
+
+@media all and (min-width: 760px) {
+  .container {
+    margin: 0 45px;
+  }
+}
+
+/*DESKTOP VERSION*/
+
+@media all and (min-width: 760px) {
 }
