@@ -273,11 +273,7 @@
     width: 50%;
   }
 
-<<<<<<< HEAD
-  /* ------------------ HERO TABLET -----------*/
-=======
   /* ------------------ HERO -----------*/
->>>>>>> 5f454a1df32b07672ded68e75e18ec5496a5ead1
 
   .hero__title {
     width: 441px;
@@ -379,13 +375,13 @@
     margin: 0 138px;
   }
 
-<<<<<<< HEAD
+  <<<<<<< HEAD
   /* -------- HERO --------- */
   .hero {
     background-image: url(../images/desktop-background.jpg);
   }
 
-=======
+  =======
 >>>>>>> 5f454a1df32b07672ded68e75e18ec5496a5ead1
   /*EQUIPO*/
   .team {
