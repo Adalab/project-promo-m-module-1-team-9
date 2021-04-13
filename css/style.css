@@ -184,8 +184,6 @@
 }
 
 .about-h2 {
-  height: 45px;
-  margin: 0 47.5 px 30 px 49.5px;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
   text-transform: capitalize;
@@ -193,6 +191,8 @@
   line-height: 1.88;
   text-align: center;
   color: var(--verde-oscuro);
+  font-weight: 500;
+  line-height: 1.88;
 }
 
 .about-article {
@@ -202,15 +202,14 @@
 
 .about-img {
   width: 185px;
-  margin: 0 55px 15px;
+  margin: 0 55px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
 
 .about-name {
-  width: 147px;
   height: 45px;
-  margin: 15px 70.5px 0 72.5px;
+  margin-top: 15px;
   font-family: var(--font-family);
   font-size: 20px;
   line-height: 2.25;
@@ -219,9 +218,7 @@
 }
 
 .about-bio {
-  width: 290px;
-  height: 200px;
-  margin: 60px 0 15px;
+  margin-bottom: 15px;
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.5;
@@ -235,11 +232,23 @@
   size: 16px;
   list-style-type: none;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.about-socialmedia-item {
+  text-decoration: none;
+  color: inherit;
 }
 
 .fab,
 .fas {
   padding: 5px;
+}
+.fab:hover {
+  transform: scale(1.5);
+}
+.fas:hover {
+  transform: scale(1.5);
 }
