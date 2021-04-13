@@ -17,26 +17,26 @@
   --gris-fondo: #f1f1f1;
 }
 
-/* --------HEADER--------*/
+/* -------- MOBILE FIRST --------*/
 
-.header-container {
-  width: 100vw;
-  height: 421px;
-  background-image: url(../images/hero_team_9.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.container {
+  margin: 0 15px;
 }
 
-.team-name {
-  width: 100vw;
-  height: 60px;
+/* --------HEADER--------*/
+
+.main-header {
   background-color: var(--verde-oscuro-alpha);
-  font-family: var(--font-rubik);
-  font-size: 16px;
   color: var(--blanco);
-  text-align: center;
-  line-height: 60px;
+  font-family: var(--font-rubik);
+}
+
+.main-header .container {
+  height: 60px;
+}
+
+.main__header-title {
+  margin: 0;
 }
 
 .nav-header {
@@ -70,31 +70,33 @@
 
 /* ------------------ FIN DEL HEADER -----------*/
 
-.hero-claim {
-  height: 80px;
-  max-height: 80px;
-  margin: -40px 15px 0 15px;
-  background-color: var(--blanco);
+.hero {
+  height: 421px;
+  background-image: url(../images/hero_team_9.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: var(--font-family);
-  font-size: 12px;
-  text-align: center;
-  justify-content: center;
+}
+
+.hero .container {
+  height: 100%;
   display: flex;
   align-items: center;
 }
 
-/* .hero img {
-  max-width: 100%;
-  display: block;
-  object-fit: fill;
-  margin-left: auto;
-  margin-right: auto;
-} */
+.hero__title {
+  margin: 0;
+  padding: 10px;
+  background-color: var(--blanco);
+  transform: translateY(50%);
+  flex-grow: 0; /* Problema con esta línea */
+}
 
 /*EQUIPO*/
 .team h2 {
   font-size: 24px;
   color: var(--verde-claro);
+  text-transform: uppercase;
 }
 
 .team p {
@@ -173,23 +175,20 @@
 /* ABOUT */
 
 .about {
-  width: 320px;
-  height: 2225px;
-  margin: 1083px 0;
-  padding: 30px 15px 45px;
   background-color: var(--blanco);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 30px 0 0;
 }
 
 .about-h2 {
-  width: 193px;
   height: 45px;
-  margin: 0 47.5px 30px 49.5px;
+  margin: 0 47.5 px 30 px 49.5px;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
+  text-transform: capitalize;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
@@ -202,8 +201,7 @@
 }
 
 .about-img {
-  width: 180px;
-  height: 180px;
+  width: 185px;
   margin: 0 55px 15px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
@@ -229,4 +227,19 @@
   line-height: 1.5;
   text-align: center;
   color: var(--gris-oscuro);
+}
+
+.about-socialmedia {
+  margin: 0 68px 45px;
+  color: var(--gris-oscuro);
+  size: 16px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fab,
+.fas {
+  padding: 5px;
 }
