@@ -30,9 +30,9 @@
   background-color: var(--verde-oscuro-alpha);
   color: var(--blanco);
   font-family: var(--font-rubik);
-  position: fixed;
+  position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .main-header .container {
@@ -41,7 +41,6 @@
 }
 
 .main__header-title {
-  margin: 0;
   line-height: 60px;
 }
 
@@ -56,12 +55,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.main-menu__item {
-  display: inline-block;
 }
 
 .main-menu a {
@@ -241,16 +234,21 @@
 }
 
 .fa {
-  color: #099d8d;
+  color: var(--verde-oscuro);
   font-size: 1rem;
 }
 
+<<<<<<< HEAD
 .fab:hover {
   transform: scale(1.5);
 }
 
 .fas:hover {
   transform: scale(1.5);
+=======
+.fa :hover {
+  color: var(--gris-oscuro);
+>>>>>>> d99105c0d5930ac64326f57c28f8690671c9de6e
 }
 
 /*TABLET VERSION*/
