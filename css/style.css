@@ -148,7 +148,10 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+}
+.line {
   border-top: 1px solid var(--gris-claro);
+  width: 100vw;
 }
 
 .copy {
