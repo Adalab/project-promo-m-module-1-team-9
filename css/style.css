@@ -110,6 +110,7 @@
 }
 
 .team {
+  scroll-margin-top: 105px;
   font-family: var(--font-family);
   text-align: center;
   padding: 30px 15px;
@@ -253,18 +254,36 @@
   .container {
     margin: 0 45px;
   }
+
+  /*EQUIPO*/
+
+  /*FORTALEZAS Y DEBILIDADES*/
+  .team-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /*DESKTOP VERSION*/
 
 @media all and (min-width: 1200px) {
-  /*HEADER*/
-  .main-header {
-    background-color: var(--verde-oscuro);
+  .container {
+    margin: 0 138px;
+  }
+  /*EQUIPO*/
+  .team {
+    padding-bottom: 60px;
+    padding-top: 45px;
+    max-width: 601px;
+    margin: auto;
+  }
+  /*FORTALEZAS Y DEBILIDADES*/
+  .team-info {
+    padding-bottom: 60px;
+    padding-top: 45px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
-  /*HERO*/
-  /*QUIENES SOMOS*/
 }
