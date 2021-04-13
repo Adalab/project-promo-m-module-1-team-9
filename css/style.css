@@ -256,15 +256,16 @@
 .fas:hover {
   transform: scale(1.5);
 
-/*TABLET VERSION*/
+  /*TABLET VERSION*/
 
-@media all and (min-width: 760px) {
-  .container {
-    margin: 0 45px;
+  @media all and (min-width: 760px) {
+    .container {
+      margin: 0 45px;
+    }
   }
-}
 
-/*DESKTOP VERSION*/
+  /*DESKTOP VERSION*/
 
-@media all and (min-width: 760px) {
+  @media all and (min-width: 760px) {
+  }
 }
