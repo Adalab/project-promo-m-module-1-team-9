@@ -12,6 +12,7 @@
   --verde-claro: #14d9c4;
   --verde-claro-alpha: #14d9c5e1;
   --blanco: #ffffff;
+  --blanco-alpha: rgba(255, 255, 255, 0.623);
   --negro: #000000;
   --gris-oscuro: #54585a;
   --gris-claro: #b8b8b9;
@@ -74,7 +75,7 @@
   color: var(--verde-oscuro);
 }
 
-/* ------------------ FIN DEL HEADER -----------*/
+/* ------------------ HERO -----------*/
 
 .hero {
   height: 421px;
@@ -93,10 +94,11 @@
 
 .hero__title {
   margin: 0;
-  padding: 15px;
+  padding: 14px 15px 16px 15px;
   background-color: var(--blanco);
   transform: translateY(200px);
   text-align: justify;
+  align-content: center;
 }
 
 /*EQUIPO*/
@@ -250,11 +252,43 @@
   /*RELLENAR - NO SE QUE COLOR ES*/
 }
 
-/*TABLET VERSION*/
+/* ===================TABLET VERSION===================*/
 
 @media all and (min-width: 760px) {
   .container {
     margin: 0 45px;
+  }
+
+  /* ------------------ HEADER TABLET -----------*/
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main__header-title {
+    font-size: 16px;
+    /* width: 50%; */
+  }
+
+  .nav-header {
+    background-color: transparent;
+    width: 50%;
+
+  }
+
+  .main-menu {
+  
+
+  /* ------------------ HERO -----------*/
+
+  .hero__title {
+    width: 441px;
+    /* height: 80px; */
+    padding: 15px 30px;
+    background-color: var(--blanco-alpha);
+    transform: translateY(170px);
   }
   /*EQUIPO*/
 
