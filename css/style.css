@@ -97,6 +97,7 @@
   font-size: 24px;
   color: var(--verde-claro);
   text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
 .team p {
@@ -242,4 +243,14 @@
 .fab,
 .fas {
   padding: 5px;
+}
+
+/*TABLET VERSION*/
+
+@media all and (min-width: 760px) {
+}
+
+/*DESKTOP VERSION*/
+
+@media all and (min-width: 760px) {
 }
