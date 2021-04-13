@@ -186,7 +186,7 @@
   background-color: var(--blanco);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 30px 0 0;
 }
@@ -194,7 +194,6 @@
 .about-h2 {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
-  text-transform: uppercase;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
@@ -204,6 +203,7 @@
 .about-article {
   text-align: center;
   padding-bottom: 45px;
+  width: 290px;
 }
 
 .about-img {
@@ -233,11 +233,11 @@
 }
 
 .about-socialmedia {
-  max-width: 124px;
+  margin: 0 68px 45px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
 }
 
 .fa {
@@ -245,13 +245,17 @@
   font-size: 1rem;
 }
 
-.fa :hover {
-  /*RELLENAR - NO SE QUE COLOR ES*/
+.fab:hover {
+  transform: scale(1.5);
+}
+
+.fas:hover {
+  transform: scale(1.5);
 }
 
 /*TABLET VERSION*/
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 768px) {
   .container {
     margin: 0 45px;
   }
@@ -280,11 +284,31 @@
 
   /*QUIENES SOMOS*/
 
+  .about {
+    display: flex;
+    align-items: center;
+    padding: 45px 0 60px;
+  }
+
   .about-article {
     width: 680px;
     display: flex;
     flex-direction: row;
     margin-bottom: 60px;
+  }
+
+  .about-bio {
+    text-align: left;
+  }
+
+  .about-img {
+    width: 210px;
+  }
+
+  .about-socialmedia {
+    width: 124px;
+    text-align: left;
+    margin: 0;
   }
 }
 
