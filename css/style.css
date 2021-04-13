@@ -42,6 +42,7 @@
 
 .main__header-title {
   margin: 0;
+  line-height: 60px;
 }
 
 .nav-header {
@@ -92,7 +93,7 @@
 
 .hero__title {
   margin: 0;
-  padding: 10px;
+  padding: 15px;
   background-color: var(--blanco);
   transform: translateY(200px);
   text-align: justify;
@@ -153,7 +154,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   text-align: center;
   border-top: 1px solid var(--gris-claro);
 }
@@ -165,7 +165,7 @@
   margin-top: 30px;
 }
 
-.footer img {
+.img-footer {
   margin-top: 30px;
   margin-bottom: 45px;
   height: 45px;
@@ -271,17 +271,26 @@
   /*FOOTER*/
   .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
   }
   .copy {
     margin-top: 30px;
+    text-align: left;
   }
   .menu {
+    transform: translate(0px, -40px);
+    line-height: 30px;
     order: 1;
     text-align: right;
   }
-
+  .img-footer {
+    margin-top: 15px;
+  }
+  .box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
   /*QUIENES SOMOS*/
 
   .about {
