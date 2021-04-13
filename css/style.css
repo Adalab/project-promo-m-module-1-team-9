@@ -17,6 +17,8 @@
   --gris-fondo: #f1f1f1;
 }
 
+/* -------- MOBILE FIRST --------*/
+
 .container {
   margin: 0 15px;
 }
@@ -94,6 +96,7 @@
 .team h2 {
   font-size: 24px;
   color: var(--verde-claro);
+  text-transform: uppercase;
 }
 
 .team p {
@@ -225,4 +228,14 @@
   line-height: 1.5;
   text-align: center;
   color: var(--gris-oscuro);
+}
+
+/* -------- TABLET STYLES --------*/
+
+@media all and (min-width: 768px) {
+}
+
+/* -------- DESKTOP STYLES --------*/
+
+@media all and (min-width: 1200px) {
 }
