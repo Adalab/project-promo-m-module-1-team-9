@@ -238,17 +238,8 @@
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
-.fab:hover {
-  transform: scale(1.5);
-}
-
-.fas:hover {
-  transform: scale(1.5);
-=======
-.fa :hover {
+.fa:hover {
   color: var(--gris-oscuro);
->>>>>>> d99105c0d5930ac64326f57c28f8690671c9de6e
 }
 
 /*TABLET VERSION*/
@@ -257,7 +248,6 @@
   .container {
     margin: 0 45px;
   }
-  /*EQUIPO*/
 
   /*FORTALEZAS Y DEBILIDADES*/
   .team-info {
