@@ -72,8 +72,9 @@
 
 .hero {
   height: 421px;
-  background-image: url(../images/hero_team_9.webp);
+  background-image: url(../images/total-background.jpg);
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   font-family: var(--font-family);
   z-index: 0;
@@ -374,6 +375,14 @@
     margin: 0 138px;
   }
 
+  <<<<<<< HEAD
+  /* -------- HERO --------- */
+  .hero {
+    background-image: url(../images/desktop-background.jpg);
+  }
+
+  =======
+>>>>>>> 5f454a1df32b07672ded68e75e18ec5496a5ead1
   /*EQUIPO*/
   .team {
     padding-bottom: 60px;
