@@ -194,13 +194,16 @@
 .about-h2 {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
   color: var(--verde-oscuro);
-  font-weight: 500;
-  line-height: 1.88;
+}
+
+.about-article {
+  text-align: center;
+  padding-bottom: 45px;
 }
 
 .about-img {
@@ -216,6 +219,7 @@
   font-family: var(--font-family);
   font-size: 20px;
   line-height: 2.25;
+  text-align: center;
   color: var(--negro);
 }
 
@@ -224,6 +228,7 @@
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
   color: var(--gris-oscuro);
 }
 
@@ -232,10 +237,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
 }
+
 .fa {
   color: #099d8d;
   font-size: 1rem;
+}
+
+.fa :hover {
+  /*RELLENAR - NO SE QUE COLOR ES*/
 }
 
 /*TABLET VERSION*/
