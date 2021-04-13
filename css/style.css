@@ -72,8 +72,9 @@
 
 .hero {
   height: 421px;
-  background-image: url(../images/hero_team_9.webp);
+  background-image: url(../images/total-background.jpg);
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   font-family: var(--font-family);
   z-index: 0;
@@ -274,10 +275,7 @@
     width: 50%;
   }
 
-  .main-menu {
-  }
-
-  /* ------------------ HERO -----------*/
+  /* ------------------ HERO TABLET -----------*/
 
   .hero__title {
     width: 441px;
@@ -364,6 +362,12 @@
   .container {
     margin: 0 138px;
   }
+
+  /* -------- HERO --------- */
+  .hero {
+    background-image: url(../images/desktop-background.jpg);
+  }
+
   /*EQUIPO*/
   .team {
     padding-bottom: 60px;
