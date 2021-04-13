@@ -369,7 +369,7 @@
     justify-content: space-between;
   }
 }
-
+/*DESKTOP VERSION*/
 @media all and (min-width: 1200px) {
   .container {
     margin: 0 138px;
