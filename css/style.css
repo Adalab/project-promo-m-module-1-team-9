@@ -258,18 +258,18 @@
 
   .main-header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
   }
 
   .main__header-title {
     font-size: 16px;
-    /* width: 50%; */
   }
 
   .nav-header {
     background-color: transparent;
-    width: 50%;
+    width: 40%;
   }
 
   .main-menu {
