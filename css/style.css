@@ -320,12 +320,6 @@
   }
   /*QUIENES SOMOS*/
 
-  .about {
-    display: flex;
-    align-items: center;
-    padding: 45px 0 60px;
-  }
-
   .about-article {
     width: 680px;
     display: flex;
@@ -333,8 +327,27 @@
     margin-bottom: 60px;
   }
 
+  .revert {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .revert-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .text-bio {
+    text-align: left;
+  }
+
   .about-bio {
     text-align: left;
+  }
+
+  .revert-text {
+    text-align: right;
   }
 
   .about-img {
@@ -343,7 +356,6 @@
 
   .about-socialmedia {
     width: 124px;
-    text-align: left;
     margin: 0;
   }
 }
