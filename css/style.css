@@ -31,9 +31,9 @@
   background-color: var(--verde-oscuro-alpha);
   color: var(--blanco);
   font-family: var(--font-rubik);
-  position: fixed;
+  position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .main-header .container {
@@ -42,7 +42,6 @@
 }
 
 .main__header-title {
-  margin: 0;
   line-height: 60px;
 }
 
@@ -57,12 +56,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.main-menu__item {
-  display: inline-block;
 }
 
 .main-menu a {
@@ -156,9 +149,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   text-align: center;
+}
+.line {
   border-top: 1px solid var(--gris-claro);
+  width: 100vw;
 }
 
 .copy {
@@ -168,7 +163,7 @@
   margin-top: 30px;
 }
 
-.footer img {
+.img-footer {
   margin-top: 30px;
   margin-bottom: 45px;
   height: 45px;
@@ -189,7 +184,7 @@
   background-color: var(--blanco);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 30px 0 0;
 }
@@ -197,7 +192,6 @@
 .about-h2 {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
-  text-transform: uppercase;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
@@ -207,6 +201,7 @@
 .about-article {
   text-align: center;
   padding-bottom: 45px;
+  width: 290px;
 }
 
 .about-img {
@@ -236,25 +231,25 @@
 }
 
 .about-socialmedia {
-  max-width: 124px;
+  margin: 0 68px 45px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
 }
 
 .fa {
-  color: #099d8d;
+  color: var(--verde-oscuro);
   font-size: 1rem;
 }
 
 .fa :hover {
-  /*RELLENAR - NO SE QUE COLOR ES*/
+  color: var(--gris-oscuro);
 }
 
 /* ===================TABLET VERSION===================*/
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 768px) {
   .container {
     margin: 0 45px;
   }
@@ -302,24 +297,53 @@
   /*FOOTER*/
   .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
   }
   .copy {
     margin-top: 30px;
+    text-align: left;
   }
   .menu {
+    transform: translate(0px, -40px);
+    line-height: 30px;
     order: 1;
     text-align: right;
   }
-
+  .img-footer {
+    margin-top: 15px;
+  }
+  .box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
   /*QUIENES SOMOS*/
+
+  .about {
+    display: flex;
+    align-items: center;
+    padding: 45px 0 60px;
+  }
 
   .about-article {
     width: 680px;
     display: flex;
     flex-direction: row;
     margin-bottom: 60px;
+  }
+
+  .about-bio {
+    text-align: left;
+  }
+
+  .about-img {
+    width: 210px;
+  }
+
+  .about-socialmedia {
+    width: 124px;
+    text-align: left;
+    margin: 0;
   }
 }
 
