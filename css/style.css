@@ -29,6 +29,9 @@
   background-color: var(--verde-oscuro-alpha);
   color: var(--blanco);
   font-family: var(--font-rubik);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .main-header .container {
@@ -76,6 +79,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--font-family);
+  z-index: 0;
 }
 
 .hero .container {
@@ -248,6 +252,9 @@
 /*TABLET VERSION*/
 
 @media all and (min-width: 760px) {
+  .container {
+    margin: 0 45px;
+  }
 }
 
 /*DESKTOP VERSION*/
