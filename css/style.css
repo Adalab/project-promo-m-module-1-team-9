@@ -151,14 +151,6 @@
   padding-top: 30px;
   padding-bottom: 45px;
   text-align: center;
-<<<<<<< HEAD
-}
-
-.box {
-  /* border: 1px solid black; */
-  /* margin: 5px; */
-=======
->>>>>>> c37c99e969673aa43b42564175e4ccad52ab333e
 }
 
 .copy {
@@ -167,15 +159,8 @@
   color: var(--gris-claro);
 }
 
-<<<<<<< HEAD
-.img-footer {
-  height: 45px;
-  box-sizing: var(--verde-oscuro);
-  object-fit: cover;
-=======
 .container img {
   height: 45px;
->>>>>>> c37c99e969673aa43b42564175e4ccad52ab333e
 }
 
 .menu a {
