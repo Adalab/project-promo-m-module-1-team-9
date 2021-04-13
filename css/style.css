@@ -202,7 +202,6 @@
 .about-article {
   text-align: center;
   padding-bottom: 45px;
-  width: 290px;
 }
 
 .about-img {
@@ -232,11 +231,12 @@
 }
 
 .about-socialmedia {
-  margin: 0 68px 45px;
+  max-width: 124px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 .fa {
