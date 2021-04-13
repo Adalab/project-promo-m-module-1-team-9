@@ -259,15 +259,14 @@
 }
 .fas:hover {
   transform: scale(1.5);
+}
 
-  /*TABLET VERSION*/
+/*TABLET VERSION*/
 
-  @media all and (min-width: 760px) {
-    .container {
-      margin: 0 45px;
-    }
+@media all and (min-width: 760px) {
+  .container {
+    margin: 0 45px;
   }
-
   /*EQUIPO*/
 
   /*FORTALEZAS Y DEBILIDADES*/
@@ -276,6 +275,7 @@
     flex-direction: row;
     justify-content: center;
   }
+
   /*FOOTER*/
   .footer {
     display: flex;
@@ -289,67 +289,17 @@
     order: 1;
     text-align: right;
   }
+
+  /*QUIENES SOMOS*/
+
+  .about-article {
+    width: 680px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
 }
 
-  /*DESKTOP VERSION*/
-
-@media all and (min-width: 760px) {
-  }
-
-  @media all and (min-width: 1200px) {
-    /*HEADER*/
-    .main-header {
-      background-color: var(--verde-oscuro);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    /*HERO*/
-    /*QUIENES SOMOS*/
-    @media all and (min-width: 760px) {
-    .about {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 45px 0 60px;
-    }
-    .about-h2 {
-      height: 45px;
-      width: 193px;
-      margin: 0 242.5px 41px 243.5px;
-    }
-    .about-article {
-      width: 680px;
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 60px;
-    }
-    .about-name {
-      margin-top: 0;
-    }
-    .about-img {
-      width: 210px;
-      margin: 0px;
-    }
-    .about-socialmedia {
-      width: 124px;
-      margin: 0;
-    }
-  }
-
-  @media all and (min-width: 1200px) {
-    .about-img {
-      width: 283px;
-    }
-
-    .about-h2 {
-      margin: 0 365.5px 41px;
-    }
-  
-    .about-article {
-      width: 924px;
-    }
-  }
 @media all and (min-width: 1200px) {
   .container {
     margin: 0 138px;
@@ -361,6 +311,7 @@
     max-width: 601px;
     margin: auto;
   }
+
   /*FORTALEZAS Y DEBILIDADES*/
   .team-info {
     padding-bottom: 60px;
@@ -369,4 +320,6 @@
     flex-direction: row;
     justify-content: center;
   }
+
+  /*QUIENES SOMOS*/
 }
