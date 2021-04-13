@@ -4,6 +4,7 @@
 /* ROOT PARA VARIABLES */
 
 :root {
+  --font-size: 16px;
   --font-family: "Open Sans", sans-serif;
   --font-rubik: "Rubik", sans-serif;
   --verde-oscuro: #099d8d;
@@ -100,7 +101,7 @@
   font-size: 24px;
   color: var(--verde-claro);
   text-transform: uppercase;
-  padding-bottom: 15px;
+  padding: 30px 0 15px 0;
 }
 
 .team p {
@@ -109,8 +110,6 @@
 }
 
 .team {
-  margin: auto;
-  max-width: 601px;
   font-family: var(--font-family);
   text-align: center;
   padding: 30px 15px;
@@ -260,5 +259,14 @@
 
 /*DESKTOP VERSION*/
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 1200px) {
+  /*HEADER*/
+  .main-header {
+    background-color: var(--verde-oscuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /*HERO*/
+  /*QUIENES SOMOS*/
 }
