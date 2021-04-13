@@ -92,8 +92,7 @@
   margin: 0;
   padding: 10px;
   background-color: var(--blanco);
-  transform: translateY(50%);
-  flex-grow: 0; /* Problema con esta línea */
+  transform: translateY(200px);
 }
 
 /*EQUIPO*/
