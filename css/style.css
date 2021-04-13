@@ -202,7 +202,6 @@
 .about-article {
   text-align: center;
   padding-bottom: 45px;
-  width: 290px;
 }
 
 .about-img {
@@ -271,10 +270,7 @@
 
   .nav-header {
     background-color: transparent;
-    width: 40%;
-  }
-
-  .main-menu {
+    width: 50%;
   }
 
   /* ------------------ HERO -----------*/
@@ -288,11 +284,19 @@
   }
   /*EQUIPO*/
 
+  .team h2 {
+    color: var(--verde-oscuro);
+  }
+
   /*FORTALEZAS Y DEBILIDADES*/
   .team-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .team-info h3 {
+    color: var(--verde-oscuro);
   }
 
   /*FOOTER*/
@@ -333,9 +337,7 @@
   }
 
   .revert-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    text-align: right;
   }
 
   .text-bio {
@@ -344,10 +346,6 @@
 
   .about-bio {
     text-align: left;
-  }
-
-  .revert-text {
-    text-align: right;
   }
 
   .about-img {
@@ -364,6 +362,7 @@
   .container {
     margin: 0 138px;
   }
+
   /*EQUIPO*/
   .team {
     padding-bottom: 60px;
