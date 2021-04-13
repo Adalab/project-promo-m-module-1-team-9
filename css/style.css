@@ -195,18 +195,16 @@
 .about-h2 {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
   color: var(--verde-oscuro);
-  font-weight: 500;
-  line-height: 1.88;
 }
 
 .about-article {
   text-align: center;
-  width: 290px;
+  padding-bottom: 45px;
 }
 
 .about-img {
@@ -236,30 +234,20 @@
 }
 
 .about-socialmedia {
-  margin: 0 68px 45px;
-  color: var(--gris-oscuro);
-  size: 16px;
-  list-style-type: none;
+  max-width: 124px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
-.about-socialmedia-item {
-  text-decoration: none;
-  color: inherit;
+.fa {
+  color: #099d8d;
+  font-size: 1rem;
 }
 
-.fab,
-.fas {
-  padding: 5px;
-}
-.fab:hover {
-  transform: scale(1.5);
-}
-.fas:hover {
-  transform: scale(1.5);
+.fa :hover {
+  /*RELLENAR - NO SE QUE COLOR ES*/
 }
 
 /*TABLET VERSION*/
