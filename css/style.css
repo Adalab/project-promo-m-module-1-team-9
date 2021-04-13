@@ -42,6 +42,7 @@
 
 .main__header-title {
   margin: 0;
+  line-height: 60px;
 }
 
 .nav-header {
@@ -92,7 +93,7 @@
 
 .hero__title {
   margin: 0;
-  padding: 10px;
+  padding: 15px;
   background-color: var(--blanco);
   transform: translateY(200px);
   text-align: justify;
