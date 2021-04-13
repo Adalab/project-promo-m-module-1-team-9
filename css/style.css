@@ -72,8 +72,9 @@
 
 .hero {
   height: 421px;
-  background-image: url(../images/hero_team_9.webp);
+  background-image: url(../images/total-background.jpg);
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   font-family: var(--font-family);
   z-index: 0;
@@ -143,6 +144,79 @@
   padding: 30px 15px 45px;
 }
 
+/* ABOUT */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.about-h2 {
+  padding-bottom: 30px;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: center;
+  color: var(--verde-oscuro);
+}
+
+.about-article {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.about-img {
+  width: 185px;
+<<<<<<< HEAD
+  /* margin: 0 55px; */
+=======
+>>>>>>> 79f601d780f7adbe6dcfadb65d4612f7d2944e2a
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+}
+
+.about-name {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 2.25;
+  text-align: center;
+  color: var(--negro);
+}
+
+.about-bio {
+  margin-bottom: 15px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--gris-oscuro);
+}
+
+.about-socialmedia {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-socialmedia a {
+  padding: 0 10px;
+}
+
+.fa {
+  color: var(--verde-oscuro);
+  font-size: 1rem;
+}
+
+.fa:hover {
+  color: var(--gris-oscuro);
+  transform: scale(1.5);
+}
+
 /* FOOTER */
 .footer {
   display: flex;
@@ -176,76 +250,6 @@
   font-family: var(--font-family);
   color: var(--gris-oscuro);
   text-align: center;
-}
-
-/* ABOUT */
-
-.about {
-  background-color: var(--blanco);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0 0;
-}
-
-.about-h2 {
-  padding-bottom: 30px;
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.88;
-  text-align: center;
-  color: var(--verde-oscuro);
-}
-
-.about-article {
-  text-align: center;
-  padding-bottom: 45px;
-}
-
-.about-img {
-  width: 185px;
-  /* margin: 0 55px; */
-  border-radius: 4px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
-}
-
-.about-name {
-  height: 45px;
-  margin-top: 15px;
-  font-family: var(--font-family);
-  font-size: 20px;
-  line-height: 2.25;
-  text-align: center;
-  color: var(--negro);
-}
-
-.about-bio {
-  margin-bottom: 15px;
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--gris-oscuro);
-}
-
-.about-socialmedia {
-  margin: 0 68px 45px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fa {
-  color: var(--verde-oscuro);
-  font-size: 1rem;
-}
-
-.fa:hover {
-  color: var(--gris-oscuro);
-  transform: scale(1.5);
 }
 
 /* ===================TABLET VERSION===================*/
@@ -299,6 +303,52 @@
     color: var(--verde-oscuro);
   }
 
+  /*QUIENES SOMOS*/
+
+  .about-article {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .revert {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .revert-text {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .revert-text p {
+    text-align: right;
+  }
+
+  .text-bio {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .text-bio p {
+    text-align: left;
+  }
+
+  .about-img {
+    width: 210px;
+  }
+
+  .about-socialmedia {
+    width: 124px;
+    margin: 0;
+  }
+
   /*FOOTER*/
   .footer {
     display: flex;
@@ -322,42 +372,8 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  /*QUIENES SOMOS*/
-
-  .about-article {
-    width: 680px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 60px;
-  }
-
-  .revert {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .revert-text {
-    text-align: right;
-  }
-
-  .text-bio {
-    text-align: left;
-  }
-
-  .about-bio {
-    text-align: left;
-  }
-
-  .about-img {
-    width: 210px;
-  }
-
-  .about-socialmedia {
-    width: 124px;
-    margin: 0;
-  }
 }
-
+/*DESKTOP VERSION*/
 @media all and (min-width: 1200px) {
   .container {
     margin: 0 138px;
@@ -381,4 +397,7 @@
   }
 
   /*QUIENES SOMOS*/
+  .about {
+    margin: 0 138px;
+  }
 }
