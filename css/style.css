@@ -255,6 +255,18 @@
   .container {
     margin: 0 45px;
   }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .copy {
+    margin-top: 30px;
+  }
+  .menu {
+    order: 1;
+    text-align: right;
+  }
 }
 
 /*DESKTOP VERSION*/
