@@ -121,7 +121,7 @@
   width: 45px;
   height: 45px;
   background-color: white;
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(1.5);
   margin: auto;
 }
 
@@ -137,11 +137,14 @@
   color: var(--verde-claro);
 }
 
-.team-info {
-  font-family: var(--font-family);
+.team-background {
   background-color: rgba(184, 184, 185, 0.2);
+}
+
+.team-info {
   text-align: center;
   padding: 30px 15px 45px;
+  font-family: var(--font-family);
 }
 
 /* ABOUT */
@@ -397,13 +400,34 @@
   .team-info {
     padding-bottom: 60px;
     padding-top: 45px;
+    max-width: 924px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
+  .fortalezas {
+    max-width: 439px;
+    padding-right: 25px;
+  }
+
+  .debilidades {
+    max-width: 439px;
+    padding-left: 25px;
+  }
+
   /*QUIENES SOMOS*/
   .about {
-    margin: 0 138px;
+    max-width: 924px;
+    margin: 0 auto;
+  }
+
+  .revert {
+    margin-right: -160px;
+  }
+
+  .normal-article {
+    margin-left: -160px;
   }
 }
