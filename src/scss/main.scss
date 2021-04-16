@@ -221,7 +221,7 @@ html {
 }
 
 .about-socialmedia a {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .fa {
@@ -232,6 +232,10 @@ html {
 .fa:hover {
   color: var(--gris-oscuro);
   transform: scale(1.5);
+}
+
+.icon-point {
+  font-size: 30px;
 }
 
 /* FOOTER */
