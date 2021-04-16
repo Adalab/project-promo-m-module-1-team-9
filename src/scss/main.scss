@@ -7,6 +7,10 @@
   outline: none;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /* TIPOGRAFIAS DE LA WEB */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 
