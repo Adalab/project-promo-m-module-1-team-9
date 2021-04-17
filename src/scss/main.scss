@@ -54,12 +54,18 @@ html {
   text-align: center;
 }
 
-.logo {
+.container .logo {
   width: 160px;
-  line-height: 60px;
+  padding: 15px 0;
 }
+
+.logo:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease 0.1s;
+}
+
 .main__header-title {
-  line-height: 60px;
+  color: transparent;
 }
 
 .nav-header {
