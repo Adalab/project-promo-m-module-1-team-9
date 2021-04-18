@@ -1,3 +1,6 @@
+@import "pages/contact";
+@import "core/variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -461,46 +464,3 @@ html {
     margin-left: -160px;
   }
 }
-/* ESTILOS PÁGINA CONTACTO */
-
-.title-contact {
-  text-transform: uppercase;
-  padding-bottom: 15px;
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  text-align: center;
-  color: var(--verde-oscuro);
-}
-
-.p-contact {
-  font-family: var(--font-family);
-  color: var(--gris-oscuro);
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.change-contact {
-  font-family: var(--font-family);
-  color: var(--gris-oscuro);
-  font-size: 12px;
-  text-align: center;
-}
-
-.asterisk {
-  color: #14d9c4;
-}
-.container-contact {
-  margin: 30px 15px 58px 15px;
-}
-
-// @media all and (min-width: 768px) {
-//   .container {
-//     margin: 0 163px;
-//   }
-// }
-
-// @media all and (min-width: 1200px) {
-//   .container {
-//     margin: 0 300px;
-//   }
-// }
