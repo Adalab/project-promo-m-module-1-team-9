@@ -13,7 +13,7 @@
   }
 }
 
-.about-h2 {
+.about__h2 {
   padding-bottom: 30px;
   font-family: $second-font;
   font-size: 24px;
@@ -23,7 +23,7 @@
   color: $main-color;
 }
 
-.about-article {
+.about__article {
   text-align: center;
   padding-bottom: 45px;
   @include tablet {
@@ -33,7 +33,7 @@
   }
 }
 
-.about-img {
+.about__img {
   width: 185px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
@@ -42,7 +42,7 @@
   }
 }
 
-.about-name {
+.about__name {
   font-family: $main-font;
   font-size: 20px;
   line-height: 2.25;
@@ -50,7 +50,7 @@
   color: $black;
 }
 
-.about-bio {
+.about__bio {
   margin-bottom: 15px;
   font-family: $main-font;
   font-size: 16px;
@@ -59,7 +59,7 @@
   color: $dark-grey;
 }
 
-.about-socialmedia {
+.about__socialmedia {
   width: 100%;
   color: $main-color;
   size: 16px;
@@ -74,7 +74,7 @@
   }
 }
 
-.about-socialmedia a {
+.about__socialmedia a {
   padding: 0 5px;
 }
 
@@ -88,11 +88,11 @@
   transform: scale(1.5);
 }
 
-.icon-point {
+.icon__point {
   font-size: 30px;
 }
 
-.text-bio {
+.text__bio {
   @include tablet {
     padding-left: 30px;
     display: flex;
@@ -102,7 +102,7 @@
   }
 }
 
-.text-bio p {
+.text__bio p {
   @include tablet {
     text-align: left;
   }
@@ -118,7 +118,7 @@
   }
 }
 
-.revert-text {
+.revert__text {
   @include tablet {
     padding-right: 30px;
     display: flex;
@@ -128,13 +128,13 @@
   }
 }
 
-.revert-text p {
+.revert__text p {
   @include tablet {
     text-align: right;
   }
 }
 
-.normal-article {
+.normal__article {
   @include desktop {
     margin-left: -160px;
   }
