@@ -16,7 +16,7 @@
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  font-family: var(--font-family);
+  font-family: $main-font;
   z-index: 0;
 }
 
@@ -29,33 +29,32 @@
 .hero__title {
   margin: 0;
   padding: 14px 15px 16px 15px;
-  background-color: var(--blanco);
+  background-color: $white;
   transform: translateY(200px);
   text-align: justify;
   align-content: center;
 }
 
 /*EQUIPO*/
-.team h2 {
-  font-size: 24px;
-  color: var(--verde-claro);
-  text-transform: uppercase;
-  padding: 30px 0 15px 0;
-  @include tablet {
-    color: var(--verde-oscuro);
-  }
-}
-
-.team p {
-  font-size: 16px;
-  color: var(--gris-oscuro);
-}
 
 .team {
   scroll-margin-top: 105px;
-  font-family: var(--font-family);
+  font-family: $main-font;
   text-align: center;
   padding: 30px 15px;
+  &_title {
+    font-size: 24px;
+    color: $second-color;
+    text-transform: uppercase;
+    padding: 30px 0 15px 0;
+    @include tablet {
+      color: $main-color;
+    }
+  }
+  &_text {
+    font-size: 16px;
+    color: $dark-grey;
+  }
   @include desktop {
     padding-bottom: 60px;
     padding-top: 45px;
@@ -69,34 +68,43 @@
 .rectangle {
   width: 45px;
   height: 45px;
-  background-color: white;
+  background-color: $white;
   transform: rotate(45deg) scale(1.5);
   margin: auto;
 }
 
-.team-info p {
-  font-size: 16px;
-  color: var(--gris-oscuro);
-  padding-bottom: 30px;
-  padding-top: 15px;
-}
-
-.team-info h3 {
-  font-size: 22px;
-  color: var(--verde-claro);
-  @include tablet {
-    color: var(--verde-oscuro);
-  }
-}
-
-.team-background {
-  background-color: rgba(184, 184, 185, 0.2);
-}
-
-.team-info {
+.dafo {
   text-align: center;
   padding: 30px 15px 45px;
-  font-family: var(--font-family);
+  font-family: $main-font;
+  &_background {
+    background-color: rgba(184, 184, 185, 0.2);
+  }
+  &_title {
+    font-size: 22px;
+    color: $second-color;
+    @include tablet {
+      color: $main-color;
+    }
+  }
+  &_text {
+    font-size: 16px;
+    color: $dark-grey;
+    padding-bottom: 30px;
+    padding-top: 15px;
+  }
+  &_strengths {
+    @include desktop {
+      max-width: 439px;
+      padding-right: 25px;
+    }
+  }
+  &_weaknesses {
+    @include desktop {
+      max-width: 439px;
+      padding-left: 25px;
+    }
+  }
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -105,24 +113,9 @@
   @include desktop {
     padding-bottom: 60px;
     padding-top: 45px;
-    max-width: 924px;
-    margin: 0 auto;
+    @include contentCentered(924px);
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-}
-
-.fortalezas {
-  @include desktop {
-    max-width: 439px;
-    padding-right: 25px;
-  }
-}
-
-.debilidades {
-  @include desktop {
-    max-width: 439px;
-    padding-left: 25px;
   }
 }
