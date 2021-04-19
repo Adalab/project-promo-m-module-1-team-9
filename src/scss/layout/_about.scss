@@ -1,0 +1,77 @@
+/* ABOUT */
+#quienes {
+  scroll-margin-top: 105px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.about-h2 {
+  padding-bottom: 30px;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: center;
+  color: var(--verde-oscuro);
+}
+
+.about-article {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.about-img {
+  width: 185px;
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+}
+
+.about-name {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 2.25;
+  text-align: center;
+  color: var(--negro);
+}
+
+.about-bio {
+  margin-bottom: 15px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--gris-oscuro);
+}
+
+.about-socialmedia {
+  width: 100%;
+  color: #099d8d;
+  size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-socialmedia a {
+  padding: 0 5px;
+}
+
+.fa {
+  color: var(--verde-oscuro);
+  font-size: 1rem;
+}
+
+.fa:hover {
+  color: var(--gris-oscuro);
+  transform: scale(1.5);
+}
+
+.icon-point {
+  font-size: 30px;
+}

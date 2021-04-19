@@ -1,0 +1,88 @@
+/* ------ CONTAINER MOBILE FIRST ------*/
+.container {
+  margin: 0 15px;
+  @include tablet {
+    margin: 0 45px;
+  }
+  @include desktop {
+    margin: 0 138px;
+  }
+}
+/* ------------------ HERO -----------*/
+
+.hero {
+  height: 421px;
+  background-image: url(../images/hero-background.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  font-family: var(--font-family);
+  z-index: 0;
+}
+
+.hero .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 14px 15px 16px 15px;
+  background-color: var(--blanco);
+  transform: translateY(200px);
+  text-align: justify;
+  align-content: center;
+}
+
+/*EQUIPO*/
+.team h2 {
+  font-size: 24px;
+  color: var(--verde-claro);
+  text-transform: uppercase;
+  padding: 30px 0 15px 0;
+}
+
+.team p {
+  font-size: 16px;
+  color: var(--gris-oscuro);
+}
+
+.team {
+  scroll-margin-top: 105px;
+  font-family: var(--font-family);
+  text-align: center;
+  padding: 30px 15px;
+}
+
+/*FORTALEZAS Y DEBILIDADES*/
+
+.rectangle {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  transform: rotate(45deg) scale(1.5);
+  margin: auto;
+}
+
+.team-info p {
+  font-size: 16px;
+  color: var(--gris-oscuro);
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+.team-info h3 {
+  font-size: 22px;
+  color: var(--verde-claro);
+}
+
+.team-background {
+  background-color: rgba(184, 184, 185, 0.2);
+}
+
+.team-info {
+  text-align: center;
+  padding: 30px 15px 45px;
+  font-family: var(--font-family);
+}

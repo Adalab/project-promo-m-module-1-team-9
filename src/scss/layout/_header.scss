@@ -1,5 +1,68 @@
-.page__header {
+/* --------HEADER--------*/
+
+.main-header {
+  background-color: var(--verde-oscuro-alpha);
+  color: var(--blanco);
+  font-family: var(--font-rubik);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-header .container {
+  height: 60px;
+  text-align: center;
+}
+
+.container .logo {
+  width: 160px;
+  padding: 15px 0;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease 0.1s;
+}
+
+.main__header-title {
+  color: transparent;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.nav-header {
+  width: 100vw;
+  height: 45px;
+  background-color: var(--verde-claro-alpha);
+  line-height: 45px;
+  @include tablet {
+    background-color: transparent;
+    width: 50%;
+  }
+}
+
+.main-menu {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-menu a {
+  font-family: var(--font-rubik);
+  font-size: 15px;
+  color: var(--blanco);
+}
+
+.main-menu a:hover {
+  color: var(--verde-oscuro);
+  @include tablet {
+    color: var(--verde-claro);
+  }
 }
