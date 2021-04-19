@@ -1,4 +1,4 @@
-/* ------ CONTAINER MOBILE FIRST ------*/
+/* ------ CONTAINER ------*/
 .container {
   margin: 0 15px;
   @include tablet {
@@ -8,7 +8,7 @@
     margin: 0 138px;
   }
 }
-/* ------------------ HERO -----------*/
+/* -------- HERO --------*/
 
 .hero {
   height: 421px;
@@ -33,41 +33,46 @@
   transform: translateY(200px);
   text-align: justify;
   align-content: center;
+  @include tablet {
+    width: 441px;
+    padding: 15px 30px;
+    background-color: var(--blanco-alpha);
+    transform: translateY(170px);
+  }
 }
 
 /*EQUIPO*/
 
 .team {
-  scroll-margin-top: 105px;
+  scroll-margin-top: rem(105);
   font-family: $main-font;
   text-align: center;
-  padding: 30px 15px;
+  padding: rem(30) rem(15);
   &_title {
-    font-size: 24px;
+    font-size: rem(24);
     color: $second-color;
     text-transform: uppercase;
-    padding: 30px 0 15px 0;
+    padding: rem(30) 0 rem(15) 0;
     @include tablet {
       color: $main-color;
     }
   }
   &_text {
-    font-size: 16px;
+    font-size: rem(16);
     color: $dark-grey;
   }
   @include desktop {
-    padding-bottom: 60px;
-    padding-top: 45px;
-    max-width: 601px;
-    margin: auto;
+    padding-bottom: rem(60);
+    padding-top: rem(45);
+    @include contentCentered(601);
   }
 }
 
 /*FORTALEZAS Y DEBILIDADES*/
 
 .rectangle {
-  width: 45px;
-  height: 45px;
+  width: rem(45);
+  height: rem(45);
   background-color: $white;
   transform: rotate(45deg) scale(1.5);
   margin: auto;
@@ -75,34 +80,34 @@
 
 .dafo {
   text-align: center;
-  padding: 30px 15px 45px;
+  padding: rem(30) rem(15) rem(45);
   font-family: $main-font;
   &_background {
     background-color: rgba(184, 184, 185, 0.2);
   }
   &_title {
-    font-size: 22px;
+    font-size: rem(22);
     color: $second-color;
     @include tablet {
       color: $main-color;
     }
   }
   &_text {
-    font-size: 16px;
+    font-size: rem(16);
     color: $dark-grey;
-    padding-bottom: 30px;
-    padding-top: 15px;
+    padding-bottom: rem(30);
+    padding-top: rem(15);
   }
   &_strengths {
     @include desktop {
-      max-width: 439px;
-      padding-right: 25px;
+      max-width: rem(439);
+      padding-right: rem(25);
     }
   }
   &_weaknesses {
     @include desktop {
-      max-width: 439px;
-      padding-left: 25px;
+      max-width: rem(439);
+      padding-left: rem(25);
     }
   }
   @include tablet {
@@ -111,8 +116,8 @@
     justify-content: center;
   }
   @include desktop {
-    padding-bottom: 60px;
-    padding-top: 45px;
+    padding-bottom: rem(60);
+    padding-top: rem(45);
     @include contentCentered(924px);
     display: flex;
     flex-direction: row;

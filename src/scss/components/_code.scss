@@ -1,10 +1,10 @@
 /* STYLES FORM */
 
 .form {
-  padding-top: 58px;
+  padding-top: rem(58);
   display: flex;
   flex-direction: column;
-  margin: 0 15px;
+  margin: 0 rem(15);
   @include tablet {
     @include contentCentered(442px);
   }
@@ -12,26 +12,26 @@
     @include contentCentered(601px);
   }
   &_label {
-    font-size: 14px;
-    color: var(--gris-oscuro);
-    font-family: var(--font-family);
-    margin-top: 13px;
-    margin-bottom: 7px;
+    font-size: rem(14);
+    color: $dark-grey;
+    font-family: $main-font;
+    margin-top: rem(13);
+    margin-bottom: rem(7);
   }
   &_input {
-    height: 45px;
-    border: 1px solid var(--gris-claro);
+    height: rem(45);
+    border: 1px solid $light-grey;
     border-radius: 2px;
-    font-size: 14px;
-    color: var(--gris-claro);
-    padding-left: 15px;
+    font-size: rem(14);
+    color: $light-grey;
+    padding-left: rem(15);
   }
   &_submit--button {
-    margin-top: 30px;
-    margin-bottom: 60px;
-    background-color: var(--verde-oscuro);
-    height: 45px;
-    color: var(--blanco);
+    margin-top: rem(30);
+    margin-bottom: rem(60);
+    background-color: $main-color;
+    height: rem(45);
+    color: $white;
     border-radius: 2px;
     text-transform: uppercase;
   }

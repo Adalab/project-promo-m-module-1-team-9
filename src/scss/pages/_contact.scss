@@ -2,36 +2,28 @@
 
 .contact {
   text-align: center;
-  padding-top: 30px;
-  @include tablet {
-    padding-top: 30px;
-  }
+  padding-top: rem(30);
   @include desktop {
     @include contentCentered(601px);
-    padding-top: 45px;
+    padding-top: rem(45);
   }
   &_title {
     text-transform: uppercase;
-    padding-bottom: 15px;
-    font-family: "Rubik", sans-serif;
-    font-size: 24px;
+    padding-bottom: rem(15);
+    font-family: $second-font;
+    font-size: rem(24);
     text-align: center;
-    color: var(--verde-oscuro);
+    color: $main-color;
   }
   &_text {
-    font-family: var(--font-family);
-    color: var(--gris-oscuro);
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 20px;
+    font-family: $main-font;
+    color: $dark-grey;
+    font-size: rem(16);
+    margin-bottom: rem(20);
     &--little {
-      font-family: var(--font-family);
-      color: var(--gris-oscuro);
-      font-size: 12px;
-      text-align: center;
-    }
-    &----asterisk {
-      color: #14d9c4;
+      color: $dark-grey;
+      font-family: $main-font;
+      font-size: rem(12);
     }
   }
 }
