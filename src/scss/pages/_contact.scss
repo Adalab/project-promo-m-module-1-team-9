@@ -1,5 +1,6 @@
 /* ESTILOS PÁGINA CONTACTO */
 
+/* INTRO CONTACTO */
 .title-contact {
   text-transform: uppercase;
   padding-bottom: 15px;
@@ -30,7 +31,7 @@
 .contact-intro {
   text-align: center;
   margin: 0 15px;
-  padding-top: 15px;
+  padding-top: 30px;
   @include tablet {
     margin: 0 45px;
     padding-top: 30px;
@@ -39,4 +40,67 @@
     @include contentCentered(601px);
     padding-top: 45px;
   }
+}
+
+/* FORM CONTACTO */
+
+.contact-form {
+  padding-top: 58px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  @include tablet {
+    @include contentCentered(442px);
+  }
+  @include desktop {
+    @include contentCentered(601px);
+  }
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.sub-form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  @include desktop {
+    width: 65%;
+  }
+}
+
+.form-label {
+  font-size: 14px;
+  color: var(--gris-oscuro);
+  font-family: var(--font-family);
+  margin-top: 13px;
+  margin-bottom: 7px;
+}
+
+.form-input {
+  height: 45px;
+  border: 1px solid var(--gris-claro);
+  border-radius: 2px;
+  font-size: 14px;
+  color: var(--gris-claro);
+  padding-left: 15px;
+}
+
+.submit-button {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  background-color: var(--verde-oscuro);
+  height: 45px;
+  color: var(--blanco);
+  border-radius: 2px;
+  text-transform: uppercase;
 }
