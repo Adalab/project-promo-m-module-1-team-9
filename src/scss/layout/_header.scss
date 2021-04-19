@@ -1,9 +1,9 @@
 /* --------HEADER--------*/
 
 .main-header {
-  background-color: var(--verde-oscuro-alpha);
-  color: var(--blanco);
-  font-family: var(--font-rubik);
+  background-color: $main-color-alpha;
+  color: $white;
+  font-family: $second-font;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -40,7 +40,7 @@
 .nav-header {
   width: 100vw;
   height: 45px;
-  background-color: var(--verde-claro-alpha);
+  background-color: $second-color-alpha;
   line-height: 45px;
   @include tablet {
     background-color: transparent;
@@ -55,14 +55,14 @@
 }
 
 .main-menu a {
-  font-family: var(--font-rubik);
+  font-family: $second-font;
   font-size: 15px;
-  color: var(--blanco);
+  color: $white;
 }
 
 .main-menu a:hover {
-  color: var(--verde-oscuro);
+  color: $main-color;
   @include tablet {
-    color: var(--verde-claro);
+    color: $second-color;
   }
 }
