@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <include src="./partials/header.html"></include>
+        <include linkequipo="./index.html#equipo" src="./partials/header.html"></include>
         <section class="hero">
             <div class="container"></div>
         </section>
@@ -37,10 +37,10 @@
         </section>
 
         <form action="https://formspree.io/f/xeqvogdj" method="post" class="contact-form">
-        
+
             <label class="form-label" for="name">Nombre completo<span class="asterisk">*</span></label>
             <input class='form-input' type="text" id="name" name="name" placeholder="Nombre..." required>
-            
+
             <div class="sub-form">
                 <div class="sub-form-item email">
                     <label class="form-label" for="mail">Email<span class="asterisk">*</span></label>
@@ -51,10 +51,10 @@
                     <input class='form-input' type="tel" id="tel" name="tel" placeholder="Ej: 123456789">
                 </div>
             </div>
-           
+
             <label class="form-label" for="message">Mensaje<span class="asterisk">*</span></label>
             <textarea class='form-input' rows="16" cols="10" id="message" name="message" placeholder="¿Qué necesitas?" wrap="soft" required></textarea>
-           
+
             <input type="submit" value="Enviar" class="submit-button">
         </form>
 
