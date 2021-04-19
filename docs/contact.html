@@ -15,23 +15,27 @@
 </head>
 
 <body>
-    <header class="main-header">
-      <div class="container">
-        <a href="index.html" title="Home">
-          <img class="logo" src="./assets/images/breaking-code-button-white.png" alt="Breaking Code">
-        </a>
-        <h1 class="main__header-title">Breaking Code</h1>
-      </div>
+    <header>
+        <header class="main-header">
+          <div class="container">
+            <a href="index.html" title="Home">
+              <img class="logo" src="./assets/images/breaking-code-button-white.png" alt="Breaking Code">
+            </a>
+            <h1 class="main__header-title">Breaking Code</h1>
+          </div>
 
-      <div class="nav-header">
-        <ul class="main-menu container">
-          <li class="main-menu__item"><a href="#equipo">EQUIPO</a></li>
-          <li class="main-menu__item"><a href="#quienes">QUIENES SOMOS</a></li>
-          <li class="main-menu__item"><a href="./contact.html">CONTACTO</a></li>
-        </ul>
-      </div>
+          <div class="nav-header">
+            <ul class="main-menu container">
+              <li class="main-menu__item"><a href="./index.html#equipo">EQUIPO</a></li>
+              <li class="main-menu__item"><a href="#quienes">QUIENES SOMOS</a></li>
+              <li class="main-menu__item"><a href="./contact.html">CONTACTO</a></li>
+            </ul>
+          </div>
+        </header>
+        <section class="hero">
+            <div class="container"></div>
+        </section>
     </header>
-
     <main>
         <section class="contact-intro">
             <h1 class="title-contact">contacto</h1>
@@ -46,6 +50,29 @@
                 </p>
             </section>
         </section>
+
+        <form action="https://formspree.io/f/xeqvogdj" method="post" class="contact-form">
+
+            <label class="form-label" for="name">Nombre completo<span class="asterisk">*</span></label>
+            <input class='form-input' type="text" id="name" name="name" placeholder="Nombre..." required>
+
+            <div class="sub-form">
+                <div class="sub-form-item email">
+                    <label class="form-label" for="mail">Email<span class="asterisk">*</span></label>
+                    <input class='form-input' type="mail" id="mail" name="mail" placeholder="email..." value="nombre.apellidos@mail.com" required>
+                </div>
+                <div class="sub-form-item">
+                    <label class="form-label" for="tel">Teléfono</label>
+                    <input class='form-input' type="tel" id="tel" name="tel" placeholder="Ej: 123456789">
+                </div>
+            </div>
+
+            <label class="form-label" for="message">Mensaje<span class="asterisk">*</span></label>
+            <textarea class='form-input' rows="16" cols="10" id="message" name="message" placeholder="¿Qué necesitas?" wrap="soft" required></textarea>
+
+            <input type="submit" value="Enviar" class="submit-button">
+        </form>
+
     </main>
     <footer class="line">
       <section class="footer container">
