@@ -1,6 +1,4 @@
-/* --------HEADER--------*/
-
-.main-header {
+.header {
   background-color: $main-color-alpha;
   color: $white;
   font-family: $second-font;
@@ -15,22 +13,22 @@
   }
 }
 
-.main-header .container {
+.header .container {
   height: 60px;
   text-align: center;
 }
 
-.container .logo {
+.container .header__logo {
   width: 160px;
   padding: 15px 0;
 }
 
-.logo:hover {
+.header__logo:hover {
   transform: scale(1.2);
   transition: all 0.3s ease 0.1s;
 }
 
-.main__header-title {
+.header__title {
   color: transparent;
   @include tablet {
     font-size: 16px;
@@ -48,19 +46,19 @@
   }
 }
 
-.main-menu {
+.nav__links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.main-menu a {
+.nav__links a {
   font-family: $second-font;
   font-size: 15px;
   color: $white;
 }
 
-.main-menu a:hover {
+.nav__links a:hover {
   color: $main-color;
   @include tablet {
     color: $second-color;
