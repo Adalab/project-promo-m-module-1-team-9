@@ -4,6 +4,7 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/about";
+@import "components/form";
 @import "pages/index";
 @import "pages/contact";
 
@@ -39,22 +40,6 @@
     padding: 15px 30px;
     background-color: var(--blanco-alpha);
     transform: translateY(170px);
-  }
-  /*EQUIPO*/
-
-  .team h2 {
-    color: var(--verde-oscuro);
-  }
-
-  /*FORTALEZAS Y DEBILIDADES*/
-  .team-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .team-info h3 {
-    color: var(--verde-oscuro);
   }
 
   /*QUIENES SOMOS*/
@@ -129,35 +114,6 @@
 }
 /*DESKTOP VERSION*/
 @media all and (min-width: 1200px) {
-  /*EQUIPO*/
-  .team {
-    padding-bottom: 60px;
-    padding-top: 45px;
-    max-width: 601px;
-    margin: auto;
-  }
-
-  /*FORTALEZAS Y DEBILIDADES*/
-  .team-info {
-    padding-bottom: 60px;
-    padding-top: 45px;
-    max-width: 924px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .fortalezas {
-    max-width: 439px;
-    padding-right: 25px;
-  }
-
-  .debilidades {
-    max-width: 439px;
-    padding-left: 25px;
-  }
-
   /*QUIENES SOMOS*/
   .about {
     max-width: 924px;
