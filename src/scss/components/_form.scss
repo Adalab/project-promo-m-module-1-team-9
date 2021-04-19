@@ -1,6 +1,6 @@
 /* STYLES FORM */
 
-.contact-form {
+.form {
   padding-top: 58px;
   display: flex;
   flex-direction: column;
@@ -11,9 +11,33 @@
   @include desktop {
     @include contentCentered(601px);
   }
+  &_label {
+    font-size: 14px;
+    color: var(--gris-oscuro);
+    font-family: var(--font-family);
+    margin-top: 13px;
+    margin-bottom: 7px;
+  }
+  &_input {
+    height: 45px;
+    border: 1px solid var(--gris-claro);
+    border-radius: 2px;
+    font-size: 14px;
+    color: var(--gris-claro);
+    padding-left: 15px;
+  }
+  &_submit--button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: var(--verde-oscuro);
+    height: 45px;
+    color: var(--blanco);
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
 }
 
-.sub-form {
+.form_sub {
   display: flex;
   flex-direction: column;
   @include desktop {
@@ -21,42 +45,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
-}
-
-.sub-form-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.email {
-  @include desktop {
-    width: 65%;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    &--email {
+      @include desktop {
+        width: 65%;
+      }
+    }
   }
-}
-
-.form-label {
-  font-size: 14px;
-  color: var(--gris-oscuro);
-  font-family: var(--font-family);
-  margin-top: 13px;
-  margin-bottom: 7px;
-}
-
-.form-input {
-  height: 45px;
-  border: 1px solid var(--gris-claro);
-  border-radius: 2px;
-  font-size: 14px;
-  color: var(--gris-claro);
-  padding-left: 15px;
-}
-
-.submit-button {
-  margin-top: 30px;
-  margin-bottom: 60px;
-  background-color: var(--verde-oscuro);
-  height: 45px;
-  color: var(--blanco);
-  border-radius: 2px;
-  text-transform: uppercase;
 }

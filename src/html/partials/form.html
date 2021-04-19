@@ -1,23 +1,23 @@
-<form action="https://formspree.io/f/xeqvogdj" method="post" class="contact-form">
+<form action="https://formspree.io/f/xeqvogdj" method="post" class="form">
 
-    <label class="form-label" for="name">Nombre completo<span class="asterisk">*</span></label>
-    <input class='form-input' type="text" id="name" name="name" placeholder="Nombre..." required>
+    <label class="form_label" for="name">Nombre completo<span class="asterisk">*</span></label>
+    <input class='form_input' type="text" id="name" name="name" placeholder="Nombre..." required>
 
-    <div class="sub-form">
-        <div class="sub-form-item email">
-            <label class="form-label" for="mail">Email<span class="asterisk">*</span></label>
-            <input class='form-input' type="mail" id="mail" name="mail" placeholder="email..."
+    <div class="form_sub">
+        <div class="form_sub-item form_sub-item--email">
+            <label class="form_label" for="mail">Email<span class="asterisk">*</span></label>
+            <input class='form_input' type="mail" id="mail" name="mail" placeholder="email..."
                 value="nombre.apellidos@mail.com" required>
         </div>
-        <div class="sub-form-item">
-            <label class="form-label" for="tel">Teléfono</label>
-            <input class='form-input' type="tel" id="tel" name="tel" placeholder="Ej: 123456789">
+        <div class="form_sub-item">
+            <label class="form_label" for="tel">Teléfono</label>
+            <input class='form_input' type="tel" id="tel" name="tel" placeholder="Ej: 123456789">
         </div>
     </div>
 
-    <label class="form-label" for="message">Mensaje<span class="asterisk">*</span></label>
-    <textarea class='form-input' rows="16" cols="10" id="message" name="message" placeholder="¿Qué necesitas?"
+    <label class="form_label" for="message">Mensaje<span class="asterisk">*</span></label>
+    <textarea class='form_input' rows="16" cols="10" id="message" name="message" placeholder="¿Qué necesitas?"
         wrap="soft" required></textarea>
 
-    <input type="submit" value="Enviar" class="submit-button">
+    <input type="submit" value="Enviar" class="form_submit--button">
 </form>
