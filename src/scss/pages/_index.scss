@@ -41,6 +41,9 @@
   color: var(--verde-claro);
   text-transform: uppercase;
   padding: 30px 0 15px 0;
+  @include tablet {
+    color: var(--verde-oscuro);
+  }
 }
 
 .team p {
@@ -53,6 +56,12 @@
   font-family: var(--font-family);
   text-align: center;
   padding: 30px 15px;
+  @include desktop {
+    padding-bottom: 60px;
+    padding-top: 45px;
+    max-width: 601px;
+    margin: auto;
+  }
 }
 
 /*FORTALEZAS Y DEBILIDADES*/
@@ -75,6 +84,9 @@
 .team-info h3 {
   font-size: 22px;
   color: var(--verde-claro);
+  @include tablet {
+    color: var(--verde-oscuro);
+  }
 }
 
 .team-background {
@@ -85,4 +97,32 @@
   text-align: center;
   padding: 30px 15px 45px;
   font-family: var(--font-family);
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @include desktop {
+    padding-bottom: 60px;
+    padding-top: 45px;
+    max-width: 924px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.fortalezas {
+  @include desktop {
+    max-width: 439px;
+    padding-right: 25px;
+  }
+}
+
+.debilidades {
+  @include desktop {
+    max-width: 439px;
+    padding-left: 25px;
+  }
 }
