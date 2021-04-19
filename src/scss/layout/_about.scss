@@ -1,61 +1,77 @@
-/* ABOUT */
 #quienes {
   scroll-margin-top: 105px;
 }
+
 .about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 0;
+  @include desktop {
+    max-width: 924px;
+    margin: 0 auto;
+  }
 }
 
 .about-h2 {
   padding-bottom: 30px;
-  font-family: "Rubik", sans-serif;
+  font-family: $second-font;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
-  color: var(--verde-oscuro);
+  color: $main-color;
 }
 
 .about-article {
   text-align: center;
   padding-bottom: 45px;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
 }
 
 .about-img {
   width: 185px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
+  @include tablet {
+    width: 210px;
+  }
 }
 
 .about-name {
-  font-family: var(--font-family);
+  font-family: $main-font;
   font-size: 20px;
   line-height: 2.25;
   text-align: center;
-  color: var(--negro);
+  color: $black;
 }
 
 .about-bio {
   margin-bottom: 15px;
-  font-family: var(--font-family);
+  font-family: $main-font;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: var(--gris-oscuro);
+  color: $dark-grey;
 }
 
 .about-socialmedia {
   width: 100%;
-  color: #099d8d;
+  color: $main-color;
   size: 16px;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @include tablet {
+    width: 124px;
+    margin: 0;
+  }
 }
 
 .about-socialmedia a {
@@ -63,15 +79,63 @@
 }
 
 .fa {
-  color: var(--verde-oscuro);
+  color: $main-color;
   font-size: 1rem;
 }
 
 .fa:hover {
-  color: var(--gris-oscuro);
+  color: $dark-grey;
   transform: scale(1.5);
 }
 
 .icon-point {
   font-size: 30px;
+}
+
+.text-bio {
+  @include tablet {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.text-bio p {
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.revert {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  @include desktop {
+    margin-right: -160px;
+  }
+}
+
+.revert-text {
+  @include tablet {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+
+.revert-text p {
+  @include tablet {
+    text-align: right;
+  }
+}
+
+.normal-article {
+  @include desktop {
+    margin-left: -160px;
+  }
 }
