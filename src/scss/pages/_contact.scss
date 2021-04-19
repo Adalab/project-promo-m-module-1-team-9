@@ -1,43 +1,37 @@
-/* ESTILOS PÁGINA CONTACTO */
+/* INTRO CONTACT */
 
-/* INTRO CONTACTO */
-.title-contact {
-  text-transform: uppercase;
-  padding-bottom: 15px;
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
+.contact {
   text-align: center;
-  color: var(--verde-oscuro);
-}
-
-.p-contact {
-  font-family: var(--font-family);
-  color: var(--gris-oscuro);
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.change-contact {
-  font-family: var(--font-family);
-  color: var(--gris-oscuro);
-  font-size: 12px;
-  text-align: center;
-}
-
-.asterisk {
-  color: #14d9c4;
-}
-
-.contact-intro {
-  text-align: center;
-  margin: 0 15px;
   padding-top: 30px;
   @include tablet {
-    margin: 0 45px;
     padding-top: 30px;
   }
   @include desktop {
     @include contentCentered(601px);
     padding-top: 45px;
+  }
+  &_title {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: var(--verde-oscuro);
+  }
+  &_text {
+    font-family: var(--font-family);
+    color: var(--gris-oscuro);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    &--little {
+      font-family: var(--font-family);
+      color: var(--gris-oscuro);
+      font-size: 12px;
+      text-align: center;
+    }
+    &----asterisk {
+      color: #14d9c4;
+    }
   }
 }

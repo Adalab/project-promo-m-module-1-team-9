@@ -23,43 +23,15 @@
         </section>
     </header>
     <main>
-        <section class="contact-intro">
-            <h1 class="title-contact">contacto</h1>
-            <section class="text-contact">
-                <p class="p-contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti temporibus nihil
-                    vero odit dolor explicabo quis harum aut repellendus magnam et, libero asperiores illum voluptates
-                    odio
-                    perspiciatis ad nam autem?
-                </p>
-                <p class="change-contact">Todos los cambios marcados con <span class="asterisk">*</span> son
-                    obligatorios
-                </p>
+        <section class="contact container">
+            <h1 class="contact_title">contacto</h1>
+            <p class="contact_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti temporibus nihil
+            vero odit dolor explicabo quis harum aut repellendus magnam et, libero asperiores illum voluptates perspiciatis ad nam autem?</p>
+            <p class="contact_text--little">Todos los cambios marcados con <span class="contact_text--asterisk">*</span> son obligatorios</p>
             </section>
         </section>
 
-        <form action="https://formspree.io/f/xeqvogdj" method="post" class="contact-form">
-
-            <label class="form-label" for="name">Nombre completo<span class="asterisk">*</span></label>
-            <input class='form-input' type="text" id="name" name="name" placeholder="Nombre..." required>
-
-            <div class="sub-form">
-                <div class="sub-form-item email">
-                    <label class="form-label" for="mail">Email<span class="asterisk">*</span></label>
-                    <input class='form-input' type="mail" id="mail" name="mail" placeholder="email..."
-                        value="nombre.apellidos@mail.com" required>
-                </div>
-                <div class="sub-form-item">
-                    <label class="form-label" for="tel">Teléfono</label>
-                    <input class='form-input' type="tel" id="tel" name="tel" placeholder="Ej: 123456789">
-                </div>
-            </div>
-
-            <label class="form-label" for="message">Mensaje<span class="asterisk">*</span></label>
-            <textarea class='form-input' rows="16" cols="10" id="message" name="message" placeholder="¿Qué necesitas?"
-                wrap="soft" required></textarea>
-
-            <input type="submit" value="Enviar" class="submit-button">
-        </form>
+        <include  src="./partials/form.html"></include>
 
     </main>
     <include linkquienes="./index.html#quienes" linkequipo="./index.html#equipo" src="./partials/footer.html"></include>
