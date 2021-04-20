@@ -16,19 +16,19 @@
 
 <body>
     <header>
-        <header class="main-header">
+        <header class="header">
           <div class="container">
             <a href="index.html" title="Home">
-              <img class="logo" src="./assets/images/breaking-code-button-white.png" alt="Breaking Code">
+              <img class="header__logo" src="./assets/images/breaking-code-button-white.png" alt="Breaking Code">
             </a>
-            <h1 class="main__header-title">Breaking Code</h1>
+            <h1 class="header__title">Breaking Code</h1>
           </div>
 
           <div class="nav-header">
-            <ul class="main-menu container">
-              <li class="main-menu__item"><a href="./index.html#equipo">EQUIPO</a></li>
-              <li class="main-menu__item"><a href="#quienes">QUIENES SOMOS</a></li>
-              <li class="main-menu__item"><a href="./contact.html">CONTACTO</a></li>
+            <ul class="nav__links container">
+              <li class="nav__links--item"><a href="./index.html#equipo">EQUIPO</a></li>
+              <li class="nav__links--item"><a href="./index.html#quienes">QUIENES SOMOS</a></li>
+              <li class="nav__links--item"><a href="./contact.html">CONTACTO</a></li>
             </ul>
           </div>
         </header>
@@ -37,40 +37,36 @@
         </section>
     </header>
     <main>
-        <section class="contact-intro">
-            <h1 class="title-contact">contacto</h1>
-            <section class="text-contact">
-                <p class="p-contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti temporibus nihil
-                    vero odit dolor explicabo quis harum aut repellendus magnam et, libero asperiores illum voluptates
-                    odio
-                    perspiciatis ad nam autem?
-                </p>
-                <p class="change-contact">Todos los cambios marcados con <span class="asterisk">*</span> son
-                    obligatorios
-                </p>
+        <section class="contact container">
+            <h1 class="contact_title">contacto</h1>
+            <p class="contact_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti temporibus nihil
+            vero odit dolor explicabo quis harum aut repellendus magnam et, libero asperiores illum voluptates perspiciatis ad nam autem?</p>
+            <p class="contact_text--little">Todos los cambios marcados con <span class="asterisk">*</span> son obligatorios</p>
             </section>
         </section>
 
-        <form action="https://formspree.io/f/xeqvogdj" method="post" class="contact-form">
+        <form action="https://formspree.io/f/xeqvogdj" method="post" class="form">
 
-            <label class="form-label" for="name">Nombre completo<span class="asterisk">*</span></label>
-            <input class='form-input' type="text" id="name" name="name" placeholder="Nombre..." required>
+            <label class="form_label" for="name">Nombre completo<span class="asterisk">*</span></label>
+            <input class='form_input' type="text" id="name" name="name" placeholder="Nombre..." required>
 
-            <div class="sub-form">
-                <div class="sub-form-item email">
-                    <label class="form-label" for="mail">Email<span class="asterisk">*</span></label>
-                    <input class='form-input' type="mail" id="mail" name="mail" placeholder="email..." value="nombre.apellidos@mail.com" required>
+            <div class="form_sub">
+                <div class="form_sub-item form_sub-item--email">
+                    <label class="form_label" for="mail">Email<span class="asterisk">*</span></label>
+                    <input class='form_input' type="mail" id="mail" name="mail" placeholder="email..."
+                        value="nombre.apellidos@mail.com" required>
                 </div>
-                <div class="sub-form-item">
-                    <label class="form-label" for="tel">Teléfono</label>
-                    <input class='form-input' type="tel" id="tel" name="tel" placeholder="Ej: 123456789">
+                <div class="form_sub-item">
+                    <label class="form_label" for="tel">Teléfono</label>
+                    <input class='form_input' type="tel" id="tel" name="tel" placeholder="Ej: 123456789">
                 </div>
             </div>
 
-            <label class="form-label" for="message">Mensaje<span class="asterisk">*</span></label>
-            <textarea class='form-input' rows="16" cols="10" id="message" name="message" placeholder="¿Qué necesitas?" wrap="soft" required></textarea>
+            <label class="form_label" for="message">Mensaje<span class="asterisk">*</span></label>
+            <textarea class='form_input' rows="16" cols="10" id="message" name="message" placeholder="¿Qué necesitas?"
+                wrap="soft" required></textarea>
 
-            <input type="submit" value="Enviar" class="submit-button">
+            <input type="submit" value="Enviar" class="form_submit--button">
         </form>
 
     </main>
@@ -80,12 +76,12 @@
           <p>Breaking Code © 2021</p>
         </div>
 
-        <section class="box">
+        <section class="menu">
           <nav>
-            <ul class="menu">
-              <li class="menu1"><a href="#equipo">EQUIPO</a></li>
-              <li class="menu2"><a href="#quienes">QUIENES SOMOS</a></li>
-              <li class="menu3"><a href="./contact.html">CONTACTO</a></li>
+            <ul class="menu__links">
+              <li class="menu__links--item"><a href="./index.html#equipo">EQUIPO</a></li>
+              <li class="menu__links--item"><a href="./index.html#quienes">QUIENES SOMOS</a></li>
+              <li class="menu__links--item"><a href="./contact.html">CONTACTO</a></li>
             </ul>
           </nav>
           <a title="Adalab" href="http://www.adalab.es"> <img class="img-footer" src="../assets/images/logo-adalab.png"

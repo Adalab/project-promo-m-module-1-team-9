@@ -10,26 +10,26 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="icon" href="./assets/images/favicon.png">
   <title>Breaking Code</title>
 
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="header">
     <div class="container">
       <a href="index.html" title="Home">
-        <img class="logo" src="./assets/images/breaking-code-button-white.png" alt="Breaking Code">
+        <img class="header__logo" src="./assets/images/breaking-code-button-white.png" alt="Breaking Code">
       </a>
-      <h1 class="main__header-title">Breaking Code</h1>
+      <h1 class="header__title">Breaking Code</h1>
     </div>
 
     <div class="nav-header">
-      <ul class="main-menu container">
-        <li class="main-menu__item"><a href="">EQUIPO</a></li>
-        <li class="main-menu__item"><a href="#quienes">QUIENES SOMOS</a></li>
-        <li class="main-menu__item"><a href="./contact.html">CONTACTO</a></li>
+      <ul class="nav__links container">
+        <li class="nav__links--item"><a href="#equipo">EQUIPO</a></li>
+        <li class="nav__links--item"><a href="#quienes">QUIENES SOMOS</a></li>
+        <li class="nav__links--item"><a href="./contact.html">CONTACTO</a></li>
       </ul>
     </div>
   </header>
@@ -42,8 +42,8 @@
     </section>
 
     <section id="equipo" class="team container">
-      <h2>Equipo</h2>
-      <p>No hay que tener miedo a equivocarse. El error es el gran maestro y siempre está dispuesto a mostrarnos
+      <h2 class="team_title">Equipo</h2>
+      <p class="team_text">No hay que tener miedo a equivocarse. El error es el gran maestro y siempre está dispuesto a mostrarnos
         el camino hacia el éxito. En un mundo en el que se festejan los aciertos y se ningunean los errores,
         nosotras estamos convencidas de que el error es el gran protagonista del proceso de aprendizaje,
         investigación y creación. ¡Rompemos código solo para aprender más!</p>
@@ -51,118 +51,118 @@
 
     <div class="rectangle"></div>
 
-    <section class="team-background">
-      <section class="team-info">
-        <div class="fortalezas">
-          <h3>Fortalezas</h3>
-          <p>Derrochamos humor por los cuatro costados, aunque tenemos sentido de la responsabilidad y la
+    <section class="dafo_background">
+      <section class="dafo">
+        <div class="dafo_strengths">
+          <h3  class="dafo_title">Fortalezas</h3>
+          <p class="dafo_text">Derrochamos humor por los cuatro costados, aunque tenemos sentido de la responsabilidad y la
             organización. Al venir de diferentes contextos, aportamos diversidad al grupo.</p>
         </div>
-        <div class="debilidades">
-          <h3>Debilidades</h3>
-          <p>Nuestra falta de experiencia en este campo se ve complementada por un extra de motivación y ganas de
+        <div class="dafo_weaknesses">
+          <h3 class="dafo_title">Debilidades</h3>
+          <p class="dafo_text">Nuestra falta de experiencia en este campo se ve complementada por un extra de motivación y ganas de
             aprender constantes.</p>
         </div>
       </section>
     </section>
 
     <section class="about" id="quienes">
-        <h2 class="about-h2">QUIÉNES SOMOS</h2>
+        <h2 class="about__h2">QUIÉNES SOMOS</h2>
 
         <div class="container">
 
-            <article class="about-article normal-article">
+            <article class="about__article normal__article">
 
-                <img class="about-img" src="../assets/images/foto_alba_vidal.jpg">
+                <img class="about__img" src="../assets/images/foto_alba_vidal.jpg">
 
-                <div class="text-bio">
-                    <h3 class="about-name">Alba Vidal</h3>
-                    <p class="about-bio">De Barcelona, autodidacta y con espíritu innovador. Aunque me gustaba
+                <div class="text__bio">
+                    <h3 class="about__name">Alba Vidal</h3>
+                    <p class="about__bio">De Barcelona, autodidacta y con espíritu innovador. Aunque me gustaba
                         montar mis propios ordenadores y trastear con la informática, me formé en la gestión
                         comercial y el marketing. Una vez descubrí el desarrollo Front End supe que había llegado a
                         mi vida para quedarse y hacer de él mi profesión.</p>
-                    <ul class="about-socialmedia">
+                    <ul class="about__socialmedia">
                         <li><a href="" target=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="https://www.linkedin.com/in/albavidalm/" target="_blank"><i class="fa fa-linkedin"
                                     aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="https://github.com/albavidalm" target="_blank"><i class="fa fa-github"
                                     aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="mailto:albavidalm@gmail.com" target="_blank"><i class="fa fa-envelope"
                                     aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </article>
 
-            <article class="about-article revert">
+            <article class="about__article revert">
 
-                <img class="about-img" src="../assets/images/foto_andrea_menendez.jpg">
+                <img class="about__img" src="../assets/images/foto_andrea_menendez.jpg">
 
-                <div class="revert-text">
-                    <h3 class="about-name">Andrea Menéndez</h3>
-                    <p class="about-bio">De Huelva, aunque mi corazón reside en Sevilla, donde cursé mi carrera
+                <div class="revert__text">
+                    <h3 class="about__name">Andrea Menéndez</h3>
+                    <p class="about__bio">De Huelva, aunque mi corazón reside en Sevilla, donde cursé mi carrera
                         fallida en Arquitectura. Actualmente tengo toda mi motivación puesta en desarrollar mi
                         carrera profesional como Front-End Developper. La motivación que me queda se la dedico al
                         CrossFit.</p>
-                    <ul class="about-socialmedia">
+                    <ul class="about__socialmedia">
                         <li><a href="" target=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="https://www.linkedin.com/in/andrea-men%C3%A9ndez-gil-a587a5106/" target="_blank"><i
                         class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="https://github.com/adrmenendez" target="_blank"><i class="fa fa-github"
                                     aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="" target=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </article>
 
-            <article class="about-article normal-article">
+            <article class="about__article normal__article">
 
-                <img class="about-img" src="../assets/images/foto_rocio_garrido.JPG">
+                <img class="about__img" src="../assets/images/foto_rocio_garrido.JPG">
 
-                <div class="text-bio">
-                    <h3 class="about-name">Rocío Garrido</h3>
-                    <p class="about-bio">De Granada, donde estudié Traducción e Interpretación, mi pasión por
+                <div class="text__bio">
+                    <h3 class="about__name">Rocío Garrido</h3>
+                    <p class="about__bio">De Granada, donde estudié Traducción e Interpretación, mi pasión por
                         conocer otras lenguas y culturas me llevó a enseñar la mía propia en Rusia y Serbia.
                         Entusiasta de la comunicación y consciente del rol fundamental
                         de la tecnología en la actualidad, entiendo la programación como un lenguaje de comunicación
                         persona-máquina que estoy deseando aprender.</p>
-                    <ul class="about-socialmedia">
+                    <ul class="about__socialmedia">
                         <li><a href="https://twitter.com/Rocio_Garrido_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="https://www.linkedin.com/in/rociogarridoanon/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="https://github.com/rociogarrido" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="mailto:rocioganon@gmail.com" target="_blank"><i class="fa fa-envelope"
                         aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </article>
 
-            <article class="about-article revert">
+            <article class="about__article revert">
 
-                <img class="about-img" src="../assets/images/foto_sofia_murias.jpg">
+                <img class="about__img" src="../assets/images/foto_sofia_murias.jpg">
 
-                <div class="revert-text">
-                    <h3 class="about-name">Sofía Murias</h3>
-                    <p class="about-bio">Intérprete de Lengua de Signos y animadora infantil, con ganas de
+                <div class="revert__text">
+                    <h3 class="about__name">Sofía Murias</h3>
+                    <p class="about__bio">Intérprete de Lengua de Signos y animadora infantil, con ganas de
                         reinventarme profesionalmente, el destino me hizo conocer Adalab, y... ¡aquí estoy con el
                         propósito de convertirme en programadora! Seguiré moviendo las manos, pero esta vez sobre
                         teclado.</p>
-                    <ul class="about-socialmedia">
+                    <ul class="about__socialmedia">
                         <li><a href="https://twitter.com/Sofia_muriaslo" target="_blank"><i class="fa fa-twitter"
                         aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="" target=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="https://github.com/SofiaMurias" target="_blank"><i class="fa fa-github"
                                     aria-hidden="true"></i></a></li>
-                        <span class="icon-point">·</span>
+                        <span class="icon__point">·</span>
                         <li><a href="mailto:sofiamuriaslopez@gmail.com" target="_blank"><i class="fa fa-envelope"
                                     aria-hidden="true"></i></a></li>
                     </ul>
@@ -180,12 +180,12 @@
         <p>Breaking Code © 2021</p>
       </div>
 
-      <section class="box">
+      <section class="menu">
         <nav>
-          <ul class="menu">
-            <li class="menu1"><a href="#equipo">EQUIPO</a></li>
-            <li class="menu2"><a href="#quienes">QUIENES SOMOS</a></li>
-            <li class="menu3"><a href="./contact.html">CONTACTO</a></li>
+          <ul class="menu__links">
+            <li class="menu__links--item"><a href="#equipo">EQUIPO</a></li>
+            <li class="menu__links--item"><a href="#quienes">QUIENES SOMOS</a></li>
+            <li class="menu__links--item"><a href="./contact.html">CONTACTO</a></li>
           </ul>
         </nav>
         <a title="Adalab" href="http://www.adalab.es"> <img class="img-footer" src="../assets/images/logo-adalab.png"
@@ -193,6 +193,7 @@
       </section>
     </section>
   </footer>
+
 </body>
 
 </html>
