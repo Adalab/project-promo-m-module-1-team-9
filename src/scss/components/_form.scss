@@ -23,8 +23,12 @@
     border: 1px solid $light-grey;
     border-radius: 2px;
     font-size: rem(14);
-    color: $light-grey;
+    color: $dark-grey;
     padding-left: rem(15);
+    &::placeholder {
+      font-size: 14px;
+      color: $light-grey;
+    }
   }
   &_submit--button {
     margin-top: rem(30);
