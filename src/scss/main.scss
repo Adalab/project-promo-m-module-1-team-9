@@ -9,24 +9,3 @@
 @import "components/asterisk";
 @import "pages/index";
 @import "pages/contact";
-
-/* TIPOGRAFIAS DE LA WEB */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
-
-/* ROOT PARA VARIABLES */
-
-:root {
-  --font-size: 16px;
-  --font-family: "Open Sans", sans-serif;
-  --font-rubik: "Rubik", sans-serif;
-  --verde-oscuro: #099d8d;
-  --verde-oscuro-alpha: #099d8eef;
-  --verde-claro: #14d9c4;
-  --verde-claro-alpha: #14d9c5e1;
-  --blanco: #ffffff;
-  --blanco-alpha: rgba(255, 255, 255, 0.623);
-  --negro: #000000;
-  --gris-oscuro: #54585a;
-  --gris-claro: #b8b8b9;
-  --gris-fondo: #f1f1f1;
-}
