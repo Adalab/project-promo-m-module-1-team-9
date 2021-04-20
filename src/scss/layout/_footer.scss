@@ -29,30 +29,29 @@
     margin-top: 15px;
   }
 }
-.menu__links {
-  margin-top: 20px;
-  @include tablet {
-    transform: translate(0px, -40px);
-    line-height: 30px;
-    order: 1;
-    text-align: right;
-  }
-}
-.menu__links a {
-  font-size: 14px;
-  font-family: $main-font;
-  color: $dark-grey;
-  text-align: center;
-}
-
-.menu__links a:hover {
-  color: $main-color;
-}
 
 .menu {
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+  &__links {
+    margin-top: 20px;
+    @include tablet {
+      transform: translate(0px, -40px);
+      line-height: 30px;
+      order: 1;
+      text-align: right;
+    }
+    a {
+      font-size: 14px;
+      font-family: $main-font;
+      color: $dark-grey;
+      text-align: center;
+      &:hover {
+        color: $main-color;
+      }
+    }
   }
 }
