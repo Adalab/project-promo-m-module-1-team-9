@@ -88,8 +88,12 @@
   transform: scale(1.5);
 }
 
-.icon__point {
-  font-size: 30px;
+.icon__point:after {
+  content: "·";
+  color: $main-color;
+  position: absolute;
+  margin-top: -5px;
+  font-size: rem(30);
 }
 
 .text__bio {
