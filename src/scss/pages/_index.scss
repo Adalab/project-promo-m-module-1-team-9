@@ -11,33 +11,31 @@
 /* -------- HERO --------*/
 
 .hero {
-  height: 421px;
+  height: rem(421);
   background-image: url(../images/hero-background.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   font-family: $main-font;
   z-index: 0;
-}
-
-.hero .container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.hero__title {
-  margin: 0;
-  padding: 14px 15px 16px 15px;
-  background-color: $white;
-  transform: translateY(200px);
-  text-align: justify;
-  align-content: center;
-  @include tablet {
-    width: 441px;
-    padding: 15px 30px;
-    background-color: $white-alpha;
-    transform: translateY(170px);
+  &__title {
+    margin: 0;
+    padding: rem(14) rem(15) rem(16) rem(15);
+    background-color: $white;
+    transform: translateY(200px);
+    text-align: justify;
+    align-content: center;
+    @include tablet {
+      width: rem(441);
+      padding: rem(15) rem(30);
+      background-color: $white-alpha;
+      transform: translateY(170px);
+    }
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 
