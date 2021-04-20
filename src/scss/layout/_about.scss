@@ -27,7 +27,7 @@
   text-align: center;
   padding-bottom: 45px;
   @include tablet {
-    display: flex;
+    display: grid;
     flex-direction: row;
     margin-bottom: 60px;
   }
@@ -42,6 +42,40 @@
   }
 }
 
+.about__img--left {
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0 30px 0 0;
+}
+
+.about__img--right {
+  grid-row: 1;
+  grid-column: 2;
+  margin: 0 0 0 30px;
+}
+
+.about__text--left {
+  @include tablet {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.about__text--right {
+  @include tablet {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
 .about__name {
   font-family: $main-font;
   font-size: 20px;
@@ -53,20 +87,16 @@
 .about__bio {
   margin-bottom: 15px;
   font-family: $main-font;
-  font-size: 16px;
   line-height: 1.5;
-  text-align: center;
   color: $dark-grey;
 }
 
 .about__socialmedia {
-  width: 100%;
   color: $main-color;
   size: 16px;
-  text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   @include tablet {
     width: 124px;
@@ -93,53 +123,6 @@
   color: $main-color;
   position: absolute;
   margin-top: -5px;
+  margin-left: 5px;
   font-size: rem(30);
-}
-
-.text__bio {
-  @include tablet {
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-
-.text__bio p {
-  @include tablet {
-    text-align: left;
-  }
-}
-
-.revert {
-  @include tablet {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  @include desktop {
-    margin-right: -160px;
-  }
-}
-
-.revert__text {
-  @include tablet {
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-}
-
-.revert__text p {
-  @include tablet {
-    text-align: right;
-  }
-}
-
-.normal__article {
-  @include desktop {
-    margin-left: -160px;
-  }
 }
