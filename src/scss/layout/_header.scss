@@ -11,6 +11,34 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__nav {
+    width: 100vw;
+    height: rem(45);
+    background-color: $second-color-alpha;
+    line-height: rem(45);
+    @include tablet {
+      background-color: transparent;
+      width: 50%;
+    }
+    &__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        text-transform: uppercase;
+        font-family: $second-font;
+        font-size: rem(15);
+        color: $white;
+        font-weight: bold;
+        &:hover {
+          color: $main-color;
+          @include tablet {
+            color: $second-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .header .container {
@@ -32,38 +60,5 @@
   color: transparent;
   @include tablet {
     font-size: rem(16);
-  }
-}
-
-.nav-header {
-  width: 100vw;
-  height: rem(45);
-  background-color: $second-color-alpha;
-  line-height: rem(45);
-  @include tablet {
-    background-color: transparent;
-    width: 50%;
-  }
-}
-
-.nav__links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  &__links a {
-    font-family: $second-font;
-    font-size: rem(15);
-    color: $white;
-  }
-  a {
-    font-family: $second-font;
-    font-size: rem(15);
-    color: $white;
-    &:hover {
-      color: $main-color;
-      @include tablet {
-        color: $second-color;
-      }
-    }
   }
 }
