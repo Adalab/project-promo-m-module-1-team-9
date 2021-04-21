@@ -56,6 +56,14 @@
       grid-row: 1;
     }
   }
+
+  .about-breaking {
+    position: absolute;
+  }
+  .about-breaking:hover {
+    opacity: 0;
+  }
+
   &__text--left {
     @include tablet {
       grid-column: 2/4;
