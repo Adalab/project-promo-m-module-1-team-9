@@ -12,21 +12,21 @@
 }
 
 .copy {
-  font-size: 14px;
+  font-size: rem(14);
   font-family: $main-font;
   color: $light-grey;
-  margin-top: 30px;
+  margin-top: rem(30);
   @include tablet {
     text-align: left;
   }
 }
 
 .img-footer {
-  margin-top: 30px;
-  margin-bottom: 45px;
-  height: 45px;
+  margin-top: rem(30);
+  margin-bottom: rem(45);
+  height: rem(45);
   @include tablet {
-    margin-top: 15px;
+    margin-top: rem(15);
   }
 }
 
@@ -37,15 +37,15 @@
     justify-content: space-between;
   }
   &__links {
-    margin-top: 20px;
+    margin-top: rem(20);
     @include tablet {
-      transform: translate(0px, -40px);
-      line-height: 30px;
+      transform: translate(rem(0, -40));
+      line-height: rem(30);
       order: 1;
       text-align: right;
     }
     a {
-      font-size: 14px;
+      font-size: rem(14);
       font-family: $main-font;
       color: $dark-grey;
       text-align: center;
