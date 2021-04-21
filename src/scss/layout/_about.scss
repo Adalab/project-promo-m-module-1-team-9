@@ -6,46 +6,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  padding-top: rem(30);
   @include tablet {
     align-items: center;
   }
   &__h2 {
-    padding-bottom: 30px;
+    padding-bottom: rem(30);
     font-family: $second-font;
-    font-size: 24px;
+    font-size: rem(24);
     font-weight: 500;
     text-align: center;
     color: $main-color;
   }
   &__article {
     text-align: center;
-    padding-bottom: 45px;
+    padding-bottom: rem(45);
     @include tablet {
-      max-width: 680px;
+      max-width: rem(680);
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
-      gap: 45px;
-      margin-bottom: 60px;
+      gap: rem(45);
+      margin-bottom: rem(60);
     }
     @include desktop {
-      max-width: 924px;
+      max-width: rem(924);
     }
   }
   &__img {
     object-fit: cover;
-    width: 185px;
-    height: 185px;
-    border-radius: 4px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
+    width: rem(185);
+    height: rem(185);
+    border-radius: rem(4);
+    border: solid rem(5) rgba(0, 0, 0, 0.08);
     @include tablet {
-      width: 210px;
-      height: 210px;
+      width: rem(210);
+      height: rem(210);
     }
     @include desktop {
-      width: 283px;
-      height: 283px;
+      width: rem(283);
+      height: rem(283);
     }
     &--left {
       grid-column: 1/2;
@@ -87,30 +87,30 @@
   }
   &__name {
     font-family: $main-font;
-    font-size: 20px;
+    font-size: rem(20);
     line-height: 2.25;
     text-align: center;
     color: $black;
   }
   &__bio {
-    margin-bottom: 15px;
+    margin-bottom: rem(15);
     font-family: $main-font;
     line-height: 1.5;
     color: $dark-grey;
     @include desktop {
-      max-width: 440px;
+      max-width: rem(440);
     }
   }
   &__socialmedia {
     color: $main-color;
-    size: 16px;
+    size: rem(16);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     @include tablet {
       margin: 0;
-      max-width: 124px;
+      max-width: rem(124);
     }
     a {
       padding: 0 5px;
