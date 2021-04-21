@@ -38,10 +38,15 @@
 
 .about__img {
   width: 185px;
+  margin: 0 55px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
   @include tablet {
     width: 210px;
+    margin: 0px;
+  }
+  @include desktop {
+    width: 283px;
   }
 }
 
