@@ -39,7 +39,7 @@
   &__links {
     margin-top: rem(20);
     @include tablet {
-      transform: translate (0, rem(-40));
+      transform: translate(0, rem(-40));
       line-height: rem(30);
       order: 1;
       text-align: right;

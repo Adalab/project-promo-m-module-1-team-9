@@ -5,8 +5,8 @@
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 0;
+  align-items: center;
+  padding-top: 30px;
   @include tablet {
     align-items: center;
   }
@@ -15,7 +15,6 @@
     font-family: $second-font;
     font-size: 24px;
     font-weight: 500;
-    line-height: 1.88;
     text-align: center;
     color: $main-color;
   }
@@ -23,45 +22,44 @@
     text-align: center;
     padding-bottom: 45px;
     @include tablet {
-      width: 680px;
+      max-width: 680px;
       display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 45px;
       margin-bottom: 60px;
     }
     @include desktop {
-      width: 924px;
+      max-width: 924px;
     }
   }
   &__img {
     object-fit: cover;
     width: 185px;
     height: 185px;
-    margin: 0 55px;
     border-radius: 4px;
     border: solid 5px rgba(0, 0, 0, 0.08);
     @include tablet {
       width: 210px;
       height: 210px;
-      margin: 0px;
     }
     @include desktop {
       width: 283px;
       height: 283px;
     }
     &--left {
+      grid-column: 1/2;
       grid-row: 1;
-      grid-column: 1;
-      margin: 0 30px 0 0;
     }
     &--right {
+      grid-column: 3/4;
       grid-row: 1;
-      grid-column: 2;
-      margin: 0 0 0 30px;
     }
   }
   &__text--left {
     @include tablet {
+      grid-column: 2/4;
       grid-row: 1;
-      grid-column: 2;
       display: flex;
       flex-direction: column;
       text-align: left;
@@ -70,8 +68,8 @@
   }
   &__text--right {
     @include tablet {
+      grid-column: 1/3;
       grid-row: 1;
-      grid-column: 1;
       text-align: right;
       display: flex;
       flex-direction: column;
@@ -90,17 +88,20 @@
     font-family: $main-font;
     line-height: 1.5;
     color: $dark-grey;
+    @include desktop {
+      max-width: 440px;
+    }
   }
   &__socialmedia {
     color: $main-color;
     size: 16px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     @include tablet {
-      width: 124px;
       margin: 0;
+      max-width: 124px;
     }
     a {
       padding: 0 5px;
@@ -117,11 +118,7 @@
   }
 }
 
-.icon__point:after {
-  content: "·";
+.icon__point {
   color: $main-color;
-  position: absolute;
-  margin-top: -5px;
-  margin-left: 5px;
   font-size: rem(30);
 }
