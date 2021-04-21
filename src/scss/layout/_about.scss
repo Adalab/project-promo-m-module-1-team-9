@@ -62,6 +62,7 @@
   }
   .about-breaking:hover {
     opacity: 0;
+    transition: ease-in 0.5s;
   }
 
   &__text--left {
