@@ -97,13 +97,13 @@
     padding-top: rem(15);
   }
   &_strengths {
-    @include desktop {
+    @include tablet {
       max-width: rem(439);
       padding-right: rem(25);
     }
   }
   &_weaknesses {
-    @include desktop {
+    @include tablet {
       max-width: rem(439);
       padding-left: rem(25);
     }
