@@ -62,7 +62,8 @@
   @include desktop {
     padding-bottom: rem(60);
     padding-top: rem(45);
-    @include contentCentered(601);
+    max-width: 601px;
+    margin: auto;
   }
 }
 
